@@ -1,0 +1,90 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {didSelect = id; }; 
+            CLASS = MHComboBoxDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_comboBox" = NSComboBox; "_controller" = MHController; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                about = id; 
+                displayDocumentation = id; 
+                displayHeader = id; 
+                displayRuntime = id; 
+                open = id; 
+                preferences = id; 
+                redo = id; 
+                undo = id; 
+            }; 
+            CLASS = MHController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_comboBoxDelegate" = MHComboBoxDelegate; 
+                "_documentationButton" = NSButton; 
+                "_drawer" = MHDrawer; 
+                "_headerButton" = NSButton; 
+                "_nextButton" = NSButton; 
+                "_openPanel" = MHOpenPanel; 
+                "_popUpButton" = NSPopUpButton; 
+                "_previousButton" = NSButton; 
+                "_progressIndicator" = NSProgressIndicator; 
+                "_runtimeButton" = NSButton; 
+                "_textViewDelegate" = MHTextViewDelegate; 
+                "_window" = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {didSelect = id; }; 
+            CLASS = MHDrawer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_controller" = MHController; "_outlineView" = NSOutlineView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {next = id; nextSelection = id; previous = id; scroll = id; }; 
+            CLASS = MHFindPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_nextButton" = NSButton; 
+                "_panel" = NSPanel; 
+                "_previousButton" = NSButton; 
+                "_statusField" = NSTextField; 
+                "_textField" = NSTextField; 
+                "_textView" = NSTextView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; didSelect = id; open = id; }; 
+            CLASS = MHOpenPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_browser" = NSBrowser; 
+                "_cancelButton" = NSButton; 
+                "_controller" = MHController; 
+                "_openButton" = NSButton; 
+                "_panel" = NSPanel; 
+                "_textField" = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = MHTextViewDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_controller" = MHController; "_textView" = NSTextView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = MagicHatService; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_controller" = MHController; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = URLTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}
