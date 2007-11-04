@@ -12,6 +12,7 @@
 @interface SZRuntime (CategoryAdditions)
 
 + (NSSet*) categories;
++ (void) _invalidateCatagories;
 
 + (NSSet*) protocolsForCategory: (Category) aCategory;
 + (NSSet*) classMethodsForCategory: (Category) aCategory;

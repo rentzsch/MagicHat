@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Deployment;
+		activeExecutable = 3765C5250CA9AC8C00394F42 /* MagicHat (Upgraded) */;
+		activeTarget = 3765C4C50CA9AC8A00394F42 /* MagicHat (Upgraded) */;
+		breakpoints = (
+			3765C55B0CA9BBC700394F42 /* MHDrawer.m:134 */,
+			3765C5B80CA9C46600394F42 /* MHComboBoxDelegate.m:222 */,
+			3765C5BF0CA9C55C00394F42 /* MHComboBoxDelegate.m:116 */,
+			3765C5C10CA9C5BA00394F42 /* MHComboBoxDelegate.m:131 */,
+			3765C5CC0CA9C91D00394F42 /* MHComboBoxDelegate.m:242 */,
+			3766DC210CAF9BBA009CBDE1 /* MHComboBoxDelegate.m:164 */,
+			3766DC290CAF9EEF009CBDE1 /* MHComboBoxDelegate.m:235 */,
+		);
+		codeSenseManager = 3765C4C10CA9AC7500394F42 /* Code sense */;
+		executables = (
+			3765C4AF0CA9AC6C00394F42 /* MagicHat */,
+			3765C5250CA9AC8C00394F42 /* MagicHat (Upgraded) */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					203,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 212837506;
+			PBXWorkspaceStateSaveDate = 212837506;
+		};
+		perUserProjectItems = {
+			379F621D0CAFA4BF00A17514 /* PBXTextBookmark */ = 379F621D0CAFA4BF00A17514 /* PBXTextBookmark */;
+			379F621F0CAFA4BF00A17514 /* PBXTextBookmark */ = 379F621F0CAFA4BF00A17514 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 3765C4C00CA9AC7500394F42 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97326FDCFA39411CA2CEA /* MagicHat */ = {
+		activeExec = 0;
+		executables = (
+			3765C4AF0CA9AC6C00394F42 /* MagicHat */,
+		);
+	};
+	3765C4AF0CA9AC6C00394F42 /* MagicHat */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = MagicHat;
+		sourceDirectories = (
+		);
+	};
+	3765C4C00CA9AC7500394F42 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	3765C4C10CA9AC7500394F42 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3765C4C50CA9AC8A00394F42 /* MagicHat (Upgraded) */ = {
+		activeExec = 0;
+		executables = (
+			3765C5250CA9AC8C00394F42 /* MagicHat (Upgraded) */,
+		);
+	};
+	3765C5250CA9AC8C00394F42 /* MagicHat (Upgraded) */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "MagicHat (Upgraded)";
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	3765C55B0CA9BBC700394F42 /* MHDrawer.m:134 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 9ECB6EEE042A263800000107 /* MHDrawer.m */;
+		functionName = "-keys";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 134;
+		location = MagicHat;
+		modificationTime = 212837081.586074;
+		state = 2;
+	};
+	3765C5B80CA9C46600394F42 /* MHComboBoxDelegate.m:222 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */;
+		functionName = "-controlTextDidChange:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 222;
+		location = MagicHat;
+		modificationTime = 212837104.347248;
+		state = 1;
+	};
+	3765C5BF0CA9C55C00394F42 /* MHComboBoxDelegate.m:116 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */;
+		functionName = "-comboBox:completedString:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 116;
+		location = MagicHat;
+		modificationTime = 212837081.588637;
+		state = 1;
+	};
+	3765C5C10CA9C5BA00394F42 /* MHComboBoxDelegate.m:131 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */;
+		functionName = "-comboBox:completedString:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 131;
+		location = MagicHat;
+		modificationTime = 212837081.594044;
+		state = 2;
+	};
+	3765C5CC0CA9C91D00394F42 /* MHComboBoxDelegate.m:242 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */;
+		functionName = "-controlTextDidChange:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 242;
+		location = MagicHat;
+		modificationTime = 212837081.600921;
+		state = 2;
+	};
+	3766DC210CAF9BBA009CBDE1 /* MHComboBoxDelegate.m:164 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */;
+		functionName = "-numberOfItemsInComboBox:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 164;
+		location = MagicHat;
+		modificationTime = 212837081.60458;
+		state = 2;
+	};
+	3766DC290CAF9EEF009CBDE1 /* MHComboBoxDelegate.m:235 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */;
+		functionName = "-controlTextDidChange:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 235;
+		location = MagicHat;
+		modificationTime = 212837081.607091;
+		state = 1;
+	};
+	379F621D0CAFA4BF00A17514 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: #error 64-bit not supported";
+		fRef = 379F621E0CAFA4BF00A17514 /* objc.h */;
+		rLen = 1;
+		rLoc = 33;
+		rType = 1;
+	};
+	379F621E0CAFA4BF00A17514 /* objc.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = objc.h;
+		path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/objc/objc.h;
+		sourceTree = "<absolute>";
+	};
+	379F621F0CAFA4BF00A17514 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 379F62200CAFA4BF00A17514 /* objc.h */;
+		name = "objc.h: 34";
+		rLen = 32;
+		rLoc = 1174;
+		rType = 0;
+		vrLen = 232;
+		vrLoc = 981;
+	};
+	379F62200CAFA4BF00A17514 /* objc.h */ = {
+		isa = PBXFileReference;
+		name = objc.h;
+		path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/objc/objc.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 1288}}";
+			sepNavSelRange = "{1174, 32}";
+			sepNavVisRange = "{981, 232}";
+		};
+	};
+	9E082C7F0423758A00919F97 /* SZClassDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 9814}}";
+			sepNavSelRange = "{3548, 8}";
+			sepNavVisRange = "{3513, 310}";
+		};
+	};
+	9E082C840423763A00919F97 /* SZClassHierarchyDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 2758}}";
+			sepNavSelRange = "{4021, 57}";
+			sepNavVisRange = "{3894, 445}";
+		};
+	};
+	9E082C870423766C00919F97 /* SZProtocolDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {812, 7546}}";
+			sepNavSelRange = "{7647, 46}";
+			sepNavVisRange = "{7518, 269}";
+			sepNavWindowFrame = "{{365, 0}, {750, 558}}";
+		};
+	};
+	9E082C8B0423767D00919F97 /* SZVariableDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {776, 2240}}";
+			sepNavSelRange = "{3646, 0}";
+			sepNavVisRange = "{3214, 437}";
+			sepNavWindowFrame = "{{130, 77}, {750, 558}}";
+		};
+	};
+	9E082C8C0423767D00919F97 /* SZVariableDescriptor.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 686}}";
+			sepNavSelRange = "{1292, 0}";
+			sepNavVisRange = "{761, 536}";
+			sepNavWindowFrame = "{{15, 182}, {750, 558}}";
+		};
+	};
+	9E082C930423769E00919F97 /* SZFrameworkDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {806, 6888}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 516}";
+		};
+	};
+	9E082C98042376AD00919F97 /* SZTypeDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {728, 4536}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 511}";
+		};
+	};
+	9E082C9C042376BD00919F97 /* SZProtocolImplementationDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {776, 2156}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 529}";
+		};
+	};
+	9E19B4EA04236DB80051A77F /* SZRuntime.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {530, 7308}}";
+			sepNavSelRange = "{3326, 0}";
+			sepNavVisRange = "{3677, 254}";
+		};
+	};
+	9E19B4EB04236DB80051A77F /* SZRuntime.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 980}}";
+			sepNavSelRange = "{978, 0}";
+			sepNavVisRange = "{912, 176}";
+		};
+	};
+	9E87033A0430D0AF00FE947C /* MagicHatService.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 546}}";
+			sepNavSelRange = "{934, 1}";
+			sepNavVisRange = "{896, 262}";
+		};
+	};
+	9E8A90E6043059DE008156C2 /* MHFindPanel.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {842, 2224}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 259}";
+		};
+	};
+	9E8F5C620425BDD30013A430 /* MHController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 1414}}";
+			sepNavSelRange = "{2056, 0}";
+			sepNavVisRange = "{1932, 359}";
+			sepNavWindowFrame = "{{107, 98}, {750, 558}}";
+		};
+	};
+	9E8F5C630425BDD30013A430 /* MHController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 9730}}";
+			sepNavSelRange = "{1158, 0}";
+			sepNavVisRange = "{1158, 275}";
+			sepNavWindowFrame = "{{67, 40}, {750, 558}}";
+		};
+	};
+	9E98124C0429C4A400000107 /* SZRuntimeAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 5712}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 273}";
+		};
+	};
+	9E98124F0429C7E900000107 /* SZCategoryDescriptor.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {890, 4690}}";
+			sepNavSelRange = "{3067, 48}";
+			sepNavVisRange = "{2804, 509}";
+		};
+	};
+	9EA92E7E042866B9004D7902 /* MHComboBoxDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 672}}";
+			sepNavSelRange = "{439, 10}";
+			sepNavVisRange = "{0, 580}";
+			sepNavWindowFrame = "{{61, 140}, {750, 558}}";
+		};
+	};
+	9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 3598}}";
+			sepNavSelRange = "{4534, 0}";
+			sepNavVisRange = "{3962, 710}";
+			sepNavWindowFrame = "{{130, 77}, {750, 558}}";
+		};
+	};
+	9ECB6EED042A263800000107 /* MHDrawer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 476}}";
+			sepNavSelRange = "{514, 0}";
+			sepNavVisRange = "{18, 634}";
+			sepNavWindowFrame = "{{192, 170}, {750, 558}}";
+		};
+	};
+	9ECB6EEE042A263800000107 /* MHDrawer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 4326}}";
+			sepNavSelRange = "{3498, 0}";
+			sepNavVisRange = "{3371, 183}";
+			sepNavWindowFrame = "{{107, 98}, {750, 558}}";
+		};
+	};
+	9EDC01C004287A11008BF40E /* SZClassDescriptorAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 4200}}";
+			sepNavSelRange = "{978, 0}";
+			sepNavVisRange = "{770, 462}";
+		};
+	};
+	9EDC01CB04287A2B008BF40E /* SZVariableDescriptorAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {720, 1302}}";
+			sepNavSelRange = "{856, 42}";
+			sepNavVisRange = "{482, 446}";
+		};
+	};
+	9EDC01CE04287A2B008BF40E /* SZProtocolDescriptorAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 3066}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 524}";
+		};
+	};
+	9EDC01D804287A5D008BF40E /* NSTextViewAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1094, 1260}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 514}";
+		};
+	};
+	9EDC05530428806E008BF40E /* MHTextViewDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 1958}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 254}";
+		};
+	};
+	9EDC055F04289122008BF40E /* NSURLAdditions.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {890, 462}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 253}";
+		};
+	};
+}

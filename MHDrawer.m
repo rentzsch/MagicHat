@@ -137,10 +137,11 @@ static NSString* const	ClassKey = @"Classes";
 	return _keys;
 }
 
-- (void) setKeys: (NSArray*) aValue
+- (NSArray*) setKeys: (NSArray*) aValue
 {
 	[_keys autorelease];
 	_keys = [aValue retain];
+	return _keys;
 }
 
 - (MHController*) controller

@@ -97,7 +97,7 @@ static NSMapTable*	_nameMap = NULL;
 			{
 				NSString*	aProtocolName = [NSString stringWithCString: aName];
 
-				NSMapInsertKnownAbsent(_nameMap, aProtocolName, aProtocol);
+				NSMapInsertIfAbsent(_nameMap, aProtocolName, aProtocol);
 			}
 		}
 	}

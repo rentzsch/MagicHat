@@ -95,4 +95,8 @@
 	return aMutableString;
 }
 
+- (NSAttributedString*)attributedDescription {
+	return [[[NSAttributedString alloc] initWithString:[self description]] autorelease];
+}
+
 @end

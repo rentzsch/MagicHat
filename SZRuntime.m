@@ -79,7 +79,7 @@ static int	_classesCount = 0;
 		_classesCount = 0;
 	}
 
-	[self _invalidateCatagories];
+	[SZRuntime _invalidateCatagories];
 }
 
 + (Class*) _classes

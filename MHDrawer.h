@@ -16,14 +16,15 @@
 @interface MHDrawer : NSObject 
 {
 	@private
-	NSMutableDictionary*	_dataSource;
-	NSArray*		_keys;
-	IBOutlet MHController*	_controller;
-	IBOutlet NSOutlineView*	_outlineView;
+	NSMutableDictionary*		_dataSource;
+	NSArray*					_keys;
+	IBOutlet MHController*		_controller;
+	IBOutlet NSOutlineView*		_outlineView;
 }
 
 - (NSDictionary*) dataSource;
 - (NSArray*) keys;
+- (NSArray*) setKeys:(NSArray*)newKeys;
 - (MHController*) controller;
 - (void) validate: (id) anObject;
 

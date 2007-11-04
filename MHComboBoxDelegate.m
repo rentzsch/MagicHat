@@ -11,6 +11,8 @@
 #import "MHController.h"
 #import "MHComboBoxDelegate.h"
 
+static lastStringLength = 0;
+
 @implementation MHComboBoxDelegate
 
 - (NSArray*) dataSource
@@ -112,6 +114,7 @@
 - (NSString*) comboBox: (NSComboBox*) aComboBox completedString: (NSString*) aString
 {
 	NSArray*	someValues = [self dataSource];
+	_completed = YES;
 	
 	if ( someValues != nil )
 	{
@@ -207,6 +210,11 @@
 
 - (void) controlTextDidChange: (NSNotification*) aNotification
 {
+	if(_completed) {
+		_completed = NO;
+		return;
+	}
+	
 	NSComboBox*	aComboBox = [aNotification object];
 	NSString*	aString = [aComboBox stringValue];
 	NSArray*	someValues = nil;
@@ -218,11 +226,11 @@
 		someValues = nil;
 	}
 	else
-	if ( [self length] > [aString length] )
+	if ( [self length] >= [aString length] )
 	{
-		someValues = [self valuesInArray: [[self controller] dataSource] withString: aString];
+		someValues = [self valuesInArray: [[self controller] dataSource] withString: [_comboBox stringValue]];
 	}
-	else
+	else 
 	{
 		[self setLength: [aString length]];
 		
@@ -230,9 +238,13 @@
 	}
 
 	[self setDataSource: someValues];
+	[aComboBox reloadData];
 	[aComboBox noteNumberOfItemsChanged];
+	
+	lastStringLength = [aString length];
 
-	[[aComboBox cell] performSelector: @selector(popUp:) withObject: self afterDelay: 0];
+	[[aComboBox cell] performSelector: @selector(popUp:) withObject: self afterDelay: 0.10];
+//	[[aComboBox cell] popUp:self];
 }
 
 @end

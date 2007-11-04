@@ -20,6 +20,7 @@
 	IBOutlet MHController*	_controller;
 	IBOutlet NSComboBox*	_comboBox;
 	int			_length;
+	BOOL		_completed;
 }
 
 - (NSArray*) dataSource;

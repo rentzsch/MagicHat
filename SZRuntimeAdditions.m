@@ -190,7 +190,7 @@ NSSet* SZSection(struct Section* aSection)
 		
 		for ( index = 0; index < count; index++ )
 		{
-			NSSet*	someCategories = SZSymtab( (Symtab) SZTranslate ( aModule -> symtab, SEC_SYMBOLS, aSection -> filename ) );
+			NSSet*	someCategories = SZSymtab( (Symtab) SZTranslate ((long) aModule -> symtab, SEC_SYMBOLS, aSection -> filename ) );
 			
 			if ( someCategories != nil )
 			{
@@ -240,7 +240,7 @@ NSSet* SZSection(struct Section* aSection)
 	
 	for ( index = 0; index < count; index++ )
 	{
-		char*		aName = _dyld_get_image_name( index );
+		char*		aName = (char*) _dyld_get_image_name( index );
 		NSString*	aFileName = [NSString stringWithCString: aName];
 		NSData*		someData = [self dataWithName: aFileName];
 		MachHeader	anHeader = (MachHeader) [someData bytes];

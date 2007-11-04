@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		29B97326FDCFA39411CA2CEA /* MagicHat */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 3765C4BF0CA9AC7500394F42 /* Build configuration list for PBXApplicationTarget "MagicHat" */;
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA /* Headers */,
+				29B97328FDCFA39411CA2CEA /* Resources */,
+				29B9732BFDCFA39411CA2CEA /* Sources */,
+				29B9732DFDCFA39411CA2CEA /* Frameworks */,
+			);
+			dependencies = (
+			);
+			name = MagicHat;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MagicHat;
+			productReference = 17587328FF379C6511CA2CBB /* MagicHat.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array/>
+	<key>CFBundleExecutable</key>
+	<string>MagicHat</string>
+	<key>CFBundleIconFile</key>
+	<string>MagicHat</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSServices</key>
+	<array>
+		<dict>
+			<key>NSExecutable</key>
+			<string>MagicHat</string>
+			<key>NSKeyEquivalent</key>
+			<dict>
+				<key>default</key>
+				<string>=</string>
+			</dict>
+			<key>NSMenuItem</key>
+			<dict>
+				<key>default</key>
+				<string>Look up in MagicHat</string>
+			</dict>
+			<key>NSMessage</key>
+			<string>lookUp</string>
+			<key>NSPortName</key>
+			<string>MagicHat</string>
+			<key>NSSendTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		29B9732CFDCFA39411CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		32CA4F650368D2AA00C91783 /* MagicHat_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* MagicHat_Prefix.h */; };
+		3765C4C70CA9AC8A00394F42 /* MagicHat_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CA4F630368D1EE00C91783 /* MagicHat_Prefix.h */; };
+		3765C4C80CA9AC8A00394F42 /* SZRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E19B4EB04236DB80051A77F /* SZRuntime.h */; };
+		3765C4C90CA9AC8A00394F42 /* ProtocolAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E19B4EF042371AA0051A77F /* ProtocolAdditions.h */; };
+		3765C4CA0CA9AC8A00394F42 /* SZClassDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C800423758A00919F97 /* SZClassDescriptor.h */; };
+		3765C4CB0CA9AC8A00394F42 /* SZClassHierarchyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C830423763A00919F97 /* SZClassHierarchyDescriptor.h */; };
+		3765C4CC0CA9AC8A00394F42 /* SZProtocolDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C880423766C00919F97 /* SZProtocolDescriptor.h */; };
+		3765C4CD0CA9AC8A00394F42 /* SZVariableDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C8C0423767D00919F97 /* SZVariableDescriptor.h */; };
+		3765C4CE0CA9AC8A00394F42 /* SZMethodDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C8F0423768B00919F97 /* SZMethodDescriptor.h */; };
+		3765C4CF0CA9AC8A00394F42 /* SZFrameworkDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C940423769F00919F97 /* SZFrameworkDescriptor.h */; };
+		3765C4D00CA9AC8A00394F42 /* SZTypeDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C97042376AD00919F97 /* SZTypeDescriptor.h */; };
+		3765C4D10CA9AC8A00394F42 /* SZProtocolImplementationDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C9B042376BC00919F97 /* SZProtocolImplementationDescriptor.h */; };
+		3765C4D20CA9AC8A00394F42 /* SZAbstractMethodDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C9F042376E100919F97 /* SZAbstractMethodDescriptor.h */; };
+		3765C4D30CA9AC8A00394F42 /* NSMethodSignatureAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082CA3042376EC00919F97 /* NSMethodSignatureAdditions.h */; };
+		3765C4D40CA9AC8A00394F42 /* MHController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8F5C620425BDD30013A430 /* MHController.h */; };
+		3765C4D50CA9AC8A00394F42 /* MHComboBoxDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA92E7E042866B9004D7902 /* MHComboBoxDelegate.h */; };
+		3765C4D60CA9AC8A00394F42 /* SZAbstractMethodDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01C104287A11008BF40E /* SZAbstractMethodDescriptorAdditions.h */; };
+		3765C4D70CA9AC8A00394F42 /* SZClassDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01C204287A11008BF40E /* SZClassDescriptorAdditions.h */; };
+		3765C4D80CA9AC8A00394F42 /* SZFrameworkDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01CA04287A2B008BF40E /* SZFrameworkDescriptorAdditions.h */; };
+		3765C4D90CA9AC8A00394F42 /* SZVariableDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01CC04287A2B008BF40E /* SZVariableDescriptorAdditions.h */; };
+		3765C4DA0CA9AC8A00394F42 /* SZProtocolDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01CF04287A2B008BF40E /* SZProtocolDescriptorAdditions.h */; };
+		3765C4DB0CA9AC8A00394F42 /* NSMutableAttributedStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01D704287A5D008BF40E /* NSMutableAttributedStringAdditions.h */; };
+		3765C4DC0CA9AC8A00394F42 /* NSTextViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01D904287A5D008BF40E /* NSTextViewAdditions.h */; };
+		3765C4DD0CA9AC8A00394F42 /* MHTextViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC05520428806E008BF40E /* MHTextViewDelegate.h */; };
+		3765C4DE0CA9AC8A00394F42 /* NSURLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC055E04289122008BF40E /* NSURLAdditions.h */; };
+		3765C4DF0CA9AC8A00394F42 /* SZRuntimeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E98124B0429C4A400000107 /* SZRuntimeAdditions.h */; };
+		3765C4E00CA9AC8A00394F42 /* SZCategoryDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9812500429C7E900000107 /* SZCategoryDescriptor.h */; };
+		3765C4E10CA9AC8A00394F42 /* SZCategoryDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9812540429C98700000107 /* SZCategoryDescriptorAdditions.h */; };
+		3765C4E20CA9AC8A00394F42 /* MHOpenPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECB6EE2042A008400000107 /* MHOpenPanel.h */; };
+		3765C4E30CA9AC8A00394F42 /* MHDrawer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECB6EED042A263800000107 /* MHDrawer.h */; };
+		3765C4E40CA9AC8A00394F42 /* SZReferenceDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE9E05E042F46CC00000104 /* SZReferenceDescriptor.h */; };
+		3765C4E50CA9AC8A00394F42 /* MHFindPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8A90E5043059DE008156C2 /* MHFindPanel.h */; };
+		3765C4E60CA9AC8A00394F42 /* MagicHatService.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E87033A0430D0AF00FE947C /* MagicHatService.h */; };
+		3765C4E70CA9AC8A00394F42 /* MagicHatPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E87033C0430D0AF00FE947C /* MagicHatPreference.h */; };
+		3765C4E80CA9AC8A00394F42 /* MHCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8DF6AE0431B30700CCBB39 /* MHCache.h */; };
+		3765C4EA0CA9AC8A00394F42 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		3765C4EB0CA9AC8A00394F42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		3765C4EC0CA9AC8A00394F42 /* Previous.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1A304275CDF00E096F9 /* Previous.gif */; };
+		3765C4ED0CA9AC8A00394F42 /* Next.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1A504275CE900E096F9 /* Next.gif */; };
+		3765C4EE0CA9AC8A00394F42 /* knob_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1B904276B6700E096F9 /* knob_nib.tiff */; };
+		3765C4EF0CA9AC8A00394F42 /* disabled_knob_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1BB04276B7A00E096F9 /* disabled_knob_nib.tiff */; };
+		3765C4F00CA9AC8A00394F42 /* MagicHat.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EC829DA0427AC7E00222BE0 /* MagicHat.tiff */; };
+		3765C4F10CA9AC8A00394F42 /* InternalLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055604288777008BF40E /* InternalLink.tiff */; };
+		3765C4F20CA9AC8A00394F42 /* HeaderLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055804288783008BF40E /* HeaderLink.tiff */; };
+		3765C4F30CA9AC8A00394F42 /* DocumentationLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055A04288792008BF40E /* DocumentationLink.tiff */; };
+		3765C4F40CA9AC8A00394F42 /* FrameworkLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055C042887A0008BF40E /* FrameworkLink.tiff */; };
+		3765C4F50CA9AC8A00394F42 /* URLTextViewHand.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC056A0428B006008BF40E /* URLTextViewHand.tiff */; };
+		3765C4F60CA9AC8A00394F42 /* MagicHat.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9EB3F7660430985600924C02 /* MagicHat.icns */; };
+		3765C4F70CA9AC8A00394F42 /* PBX-h-Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E472C00054C470300B759E9 /* PBX-h-Icon.tiff */; };
+		3765C4F80CA9AC8A00394F42 /* PBX-strings-Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E472C01054C470300B759E9 /* PBX-strings-Icon.tiff */; };
+		3765C4F90CA9AC8A00394F42 /* PBX-m-Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E472C02054C470300B759E9 /* PBX-m-Icon.tiff */; };
+		3765C4FA0CA9AC8A00394F42 /* MagicHatPreference.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9E99C33F0BDD25E300B63A2D /* MagicHatPreference.nib */; };
+		3765C4FC0CA9AC8A00394F42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		3765C4FD0CA9AC8A00394F42 /* SZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E19B4EA04236DB80051A77F /* SZRuntime.m */; };
+		3765C4FE0CA9AC8A00394F42 /* ProtocolAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E19B4EE042371AA0051A77F /* ProtocolAdditions.m */; };
+		3765C4FF0CA9AC8A00394F42 /* SZClassDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C7F0423758A00919F97 /* SZClassDescriptor.m */; };
+		3765C5000CA9AC8A00394F42 /* SZClassHierarchyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C840423763A00919F97 /* SZClassHierarchyDescriptor.m */; };
+		3765C5010CA9AC8A00394F42 /* SZProtocolDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C870423766C00919F97 /* SZProtocolDescriptor.m */; };
+		3765C5020CA9AC8A00394F42 /* SZVariableDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C8B0423767D00919F97 /* SZVariableDescriptor.m */; };
+		3765C5030CA9AC8A00394F42 /* SZMethodDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C900423768B00919F97 /* SZMethodDescriptor.m */; };
+		3765C5040CA9AC8A00394F42 /* SZFrameworkDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C930423769E00919F97 /* SZFrameworkDescriptor.m */; };
+		3765C5050CA9AC8A00394F42 /* SZTypeDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C98042376AD00919F97 /* SZTypeDescriptor.m */; };
+		3765C5060CA9AC8A00394F42 /* SZProtocolImplementationDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C9C042376BD00919F97 /* SZProtocolImplementationDescriptor.m */; };
+		3765C5070CA9AC8A00394F42 /* SZAbstractMethodDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082CA0042376E200919F97 /* SZAbstractMethodDescriptor.m */; };
+		3765C5080CA9AC8A00394F42 /* MHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F5C630425BDD30013A430 /* MHController.m */; };
+		3765C5090CA9AC8A00394F42 /* MHComboBoxDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */; };
+		3765C50A0CA9AC8A00394F42 /* SZAbstractMethodDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01BF04287A11008BF40E /* SZAbstractMethodDescriptorAdditions.m */; };
+		3765C50B0CA9AC8A00394F42 /* SZClassDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01C004287A11008BF40E /* SZClassDescriptorAdditions.m */; };
+		3765C50C0CA9AC8A00394F42 /* SZVariableDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01CB04287A2B008BF40E /* SZVariableDescriptorAdditions.m */; };
+		3765C50D0CA9AC8A00394F42 /* SZFrameworkDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01CD04287A2B008BF40E /* SZFrameworkDescriptorAdditions.m */; };
+		3765C50E0CA9AC8A00394F42 /* SZProtocolDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01CE04287A2B008BF40E /* SZProtocolDescriptorAdditions.m */; };
+		3765C50F0CA9AC8A00394F42 /* NSMutableAttributedStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01D604287A5D008BF40E /* NSMutableAttributedStringAdditions.m */; };
+		3765C5100CA9AC8A00394F42 /* NSTextViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01D804287A5D008BF40E /* NSTextViewAdditions.m */; };
+		3765C5110CA9AC8A00394F42 /* MHTextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC05530428806E008BF40E /* MHTextViewDelegate.m */; };
+		3765C5120CA9AC8A00394F42 /* NSURLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC055F04289122008BF40E /* NSURLAdditions.m */; };
+		3765C5130CA9AC8A00394F42 /* SZRuntimeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E98124C0429C4A400000107 /* SZRuntimeAdditions.m */; };
+		3765C5140CA9AC8A00394F42 /* SZCategoryDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E98124F0429C7E900000107 /* SZCategoryDescriptor.m */; };
+		3765C5150CA9AC8A00394F42 /* SZCategoryDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9812530429C98700000107 /* SZCategoryDescriptorAdditions.m */; };
+		3765C5160CA9AC8A00394F42 /* MHOpenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECB6EE3042A008400000107 /* MHOpenPanel.m */; };
+		3765C5170CA9AC8A00394F42 /* MHDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECB6EEE042A263800000107 /* MHDrawer.m */; };
+		3765C5180CA9AC8A00394F42 /* SZReferenceDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9E05F042F46CC00000104 /* SZReferenceDescriptor.m */; };
+		3765C5190CA9AC8A00394F42 /* MHFindPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A90E6043059DE008156C2 /* MHFindPanel.m */; };
+		3765C51A0CA9AC8A00394F42 /* MagicHatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8703390430D0AF00FE947C /* MagicHatService.m */; };
+		3765C51B0CA9AC8A00394F42 /* MagicHatPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E87033B0430D0AF00FE947C /* MagicHatPreference.m */; };
+		3765C51C0CA9AC8A00394F42 /* MHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8DF6AD0431B30700CCBB39 /* MHCache.m */; };
+		3765C51E0CA9AC8A00394F42 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9E082C810423758A00919F97 /* SZClassDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C7F0423758A00919F97 /* SZClassDescriptor.m */; };
+		9E082C820423758A00919F97 /* SZClassDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C800423758A00919F97 /* SZClassDescriptor.h */; };
+		9E082C850423763A00919F97 /* SZClassHierarchyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C830423763A00919F97 /* SZClassHierarchyDescriptor.h */; };
+		9E082C860423763A00919F97 /* SZClassHierarchyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C840423763A00919F97 /* SZClassHierarchyDescriptor.m */; };
+		9E082C890423766C00919F97 /* SZProtocolDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C870423766C00919F97 /* SZProtocolDescriptor.m */; };
+		9E082C8A0423766C00919F97 /* SZProtocolDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C880423766C00919F97 /* SZProtocolDescriptor.h */; };
+		9E082C8D0423767D00919F97 /* SZVariableDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C8B0423767D00919F97 /* SZVariableDescriptor.m */; };
+		9E082C8E0423767D00919F97 /* SZVariableDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C8C0423767D00919F97 /* SZVariableDescriptor.h */; };
+		9E082C910423768B00919F97 /* SZMethodDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C8F0423768B00919F97 /* SZMethodDescriptor.h */; };
+		9E082C920423768B00919F97 /* SZMethodDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C900423768B00919F97 /* SZMethodDescriptor.m */; };
+		9E082C950423769F00919F97 /* SZFrameworkDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C930423769E00919F97 /* SZFrameworkDescriptor.m */; };
+		9E082C960423769F00919F97 /* SZFrameworkDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C940423769F00919F97 /* SZFrameworkDescriptor.h */; };
+		9E082C99042376AD00919F97 /* SZTypeDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C97042376AD00919F97 /* SZTypeDescriptor.h */; };
+		9E082C9A042376AD00919F97 /* SZTypeDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C98042376AD00919F97 /* SZTypeDescriptor.m */; };
+		9E082C9D042376BD00919F97 /* SZProtocolImplementationDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C9B042376BC00919F97 /* SZProtocolImplementationDescriptor.h */; };
+		9E082C9E042376BD00919F97 /* SZProtocolImplementationDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082C9C042376BD00919F97 /* SZProtocolImplementationDescriptor.m */; };
+		9E082CA1042376E200919F97 /* SZAbstractMethodDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082C9F042376E100919F97 /* SZAbstractMethodDescriptor.h */; };
+		9E082CA2042376E200919F97 /* SZAbstractMethodDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E082CA0042376E200919F97 /* SZAbstractMethodDescriptor.m */; };
+		9E082CA4042376EC00919F97 /* NSMethodSignatureAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E082CA3042376EC00919F97 /* NSMethodSignatureAdditions.h */; };
+		9E19B4EC04236DB80051A77F /* SZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E19B4EA04236DB80051A77F /* SZRuntime.m */; };
+		9E19B4ED04236DB80051A77F /* SZRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E19B4EB04236DB80051A77F /* SZRuntime.h */; };
+		9E19B4F0042371AA0051A77F /* ProtocolAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E19B4EE042371AA0051A77F /* ProtocolAdditions.m */; };
+		9E19B4F1042371AA0051A77F /* ProtocolAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E19B4EF042371AA0051A77F /* ProtocolAdditions.h */; };
+		9E472C03054C470300B759E9 /* PBX-h-Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E472C00054C470300B759E9 /* PBX-h-Icon.tiff */; };
+		9E472C04054C470300B759E9 /* PBX-strings-Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E472C01054C470300B759E9 /* PBX-strings-Icon.tiff */; };
+		9E472C05054C470300B759E9 /* PBX-m-Icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E472C02054C470300B759E9 /* PBX-m-Icon.tiff */; };
+		9E87033D0430D0AF00FE947C /* MagicHatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8703390430D0AF00FE947C /* MagicHatService.m */; };
+		9E87033E0430D0AF00FE947C /* MagicHatService.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E87033A0430D0AF00FE947C /* MagicHatService.h */; };
+		9E87033F0430D0AF00FE947C /* MagicHatPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E87033B0430D0AF00FE947C /* MagicHatPreference.m */; };
+		9E8703400430D0AF00FE947C /* MagicHatPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E87033C0430D0AF00FE947C /* MagicHatPreference.h */; };
+		9E8A90E7043059DE008156C2 /* MHFindPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8A90E5043059DE008156C2 /* MHFindPanel.h */; };
+		9E8A90E8043059DE008156C2 /* MHFindPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A90E6043059DE008156C2 /* MHFindPanel.m */; };
+		9E8DF6AF0431B30700CCBB39 /* MHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8DF6AD0431B30700CCBB39 /* MHCache.m */; };
+		9E8DF6B00431B30700CCBB39 /* MHCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8DF6AE0431B30700CCBB39 /* MHCache.h */; };
+		9E8F5C640425BDD30013A430 /* MHController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8F5C620425BDD30013A430 /* MHController.h */; };
+		9E8F5C650425BDD30013A430 /* MHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F5C630425BDD30013A430 /* MHController.m */; };
+		9E98124D0429C4A400000107 /* SZRuntimeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E98124B0429C4A400000107 /* SZRuntimeAdditions.h */; };
+		9E98124E0429C4A400000107 /* SZRuntimeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E98124C0429C4A400000107 /* SZRuntimeAdditions.m */; };
+		9E9812510429C7E900000107 /* SZCategoryDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E98124F0429C7E900000107 /* SZCategoryDescriptor.m */; };
+		9E9812520429C7E900000107 /* SZCategoryDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9812500429C7E900000107 /* SZCategoryDescriptor.h */; };
+		9E9812550429C98700000107 /* SZCategoryDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9812530429C98700000107 /* SZCategoryDescriptorAdditions.m */; };
+		9E9812560429C98700000107 /* SZCategoryDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9812540429C98700000107 /* SZCategoryDescriptorAdditions.h */; };
+		9E99C3410BDD25E300B63A2D /* MagicHatPreference.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9E99C33F0BDD25E300B63A2D /* MagicHatPreference.nib */; };
+		9E99F1A404275CDF00E096F9 /* Previous.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1A304275CDF00E096F9 /* Previous.gif */; };
+		9E99F1A604275CE900E096F9 /* Next.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1A504275CE900E096F9 /* Next.gif */; };
+		9E99F1BA04276B6700E096F9 /* knob_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1B904276B6700E096F9 /* knob_nib.tiff */; };
+		9E99F1BC04276B7A00E096F9 /* disabled_knob_nib.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9E99F1BB04276B7A00E096F9 /* disabled_knob_nib.tiff */; };
+		9EA92E80042866B9004D7902 /* MHComboBoxDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA92E7E042866B9004D7902 /* MHComboBoxDelegate.h */; };
+		9EA92E81042866B9004D7902 /* MHComboBoxDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */; };
+		9EB3F7670430985600924C02 /* MagicHat.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9EB3F7660430985600924C02 /* MagicHat.icns */; };
+		9EC829DB0427AC7E00222BE0 /* MagicHat.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EC829DA0427AC7E00222BE0 /* MagicHat.tiff */; };
+		9ECB6EE4042A008400000107 /* MHOpenPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECB6EE2042A008400000107 /* MHOpenPanel.h */; };
+		9ECB6EE5042A008400000107 /* MHOpenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECB6EE3042A008400000107 /* MHOpenPanel.m */; };
+		9ECB6EEF042A263800000107 /* MHDrawer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECB6EED042A263800000107 /* MHDrawer.h */; };
+		9ECB6EF0042A263800000107 /* MHDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECB6EEE042A263800000107 /* MHDrawer.m */; };
+		9EDC01C504287A11008BF40E /* SZAbstractMethodDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01BF04287A11008BF40E /* SZAbstractMethodDescriptorAdditions.m */; };
+		9EDC01C604287A11008BF40E /* SZClassDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01C004287A11008BF40E /* SZClassDescriptorAdditions.m */; };
+		9EDC01C704287A11008BF40E /* SZAbstractMethodDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01C104287A11008BF40E /* SZAbstractMethodDescriptorAdditions.h */; };
+		9EDC01C804287A11008BF40E /* SZClassDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01C204287A11008BF40E /* SZClassDescriptorAdditions.h */; };
+		9EDC01D004287A2B008BF40E /* SZFrameworkDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01CA04287A2B008BF40E /* SZFrameworkDescriptorAdditions.h */; };
+		9EDC01D104287A2B008BF40E /* SZVariableDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01CB04287A2B008BF40E /* SZVariableDescriptorAdditions.m */; };
+		9EDC01D204287A2B008BF40E /* SZVariableDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01CC04287A2B008BF40E /* SZVariableDescriptorAdditions.h */; };
+		9EDC01D304287A2B008BF40E /* SZFrameworkDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01CD04287A2B008BF40E /* SZFrameworkDescriptorAdditions.m */; };
+		9EDC01D404287A2B008BF40E /* SZProtocolDescriptorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01CE04287A2B008BF40E /* SZProtocolDescriptorAdditions.m */; };
+		9EDC01D504287A2B008BF40E /* SZProtocolDescriptorAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01CF04287A2B008BF40E /* SZProtocolDescriptorAdditions.h */; };
+		9EDC01DA04287A5D008BF40E /* NSMutableAttributedStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01D604287A5D008BF40E /* NSMutableAttributedStringAdditions.m */; };
+		9EDC01DB04287A5D008BF40E /* NSMutableAttributedStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01D704287A5D008BF40E /* NSMutableAttributedStringAdditions.h */; };
+		9EDC01DC04287A5D008BF40E /* NSTextViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC01D804287A5D008BF40E /* NSTextViewAdditions.m */; };
+		9EDC01DD04287A5D008BF40E /* NSTextViewAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC01D904287A5D008BF40E /* NSTextViewAdditions.h */; };
+		9EDC05540428806E008BF40E /* MHTextViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC05520428806E008BF40E /* MHTextViewDelegate.h */; };
+		9EDC05550428806E008BF40E /* MHTextViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC05530428806E008BF40E /* MHTextViewDelegate.m */; };
+		9EDC055704288777008BF40E /* InternalLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055604288777008BF40E /* InternalLink.tiff */; };
+		9EDC055904288783008BF40E /* HeaderLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055804288783008BF40E /* HeaderLink.tiff */; };
+		9EDC055B04288792008BF40E /* DocumentationLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055A04288792008BF40E /* DocumentationLink.tiff */; };
+		9EDC055D042887A0008BF40E /* FrameworkLink.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC055C042887A0008BF40E /* FrameworkLink.tiff */; };
+		9EDC056004289122008BF40E /* NSURLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDC055E04289122008BF40E /* NSURLAdditions.h */; };
+		9EDC056104289122008BF40E /* NSURLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC055F04289122008BF40E /* NSURLAdditions.m */; };
+		9EDC056B0428B006008BF40E /* URLTextViewHand.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC056A0428B006008BF40E /* URLTextViewHand.tiff */; };
+		9EE9E060042F46CC00000104 /* SZReferenceDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EE9E05E042F46CC00000104 /* SZReferenceDescriptor.h */; };
+		9EE9E061042F46CC00000104 /* SZReferenceDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9E05F042F46CC00000104 /* SZReferenceDescriptor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		17587328FF379C6511CA2CBB /* MagicHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MagicHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* MagicHat_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicHat_Prefix.h; sourceTree = "<group>"; };
+		3765C5230CA9AC8C00394F42 /* Info-MagicHat__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-MagicHat__Upgraded_.plist"; sourceTree = "<group>"; };
+		3765C5240CA9AC8C00394F42 /* MagicHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E082C7F0423758A00919F97 /* SZClassDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZClassDescriptor.m; sourceTree = "<group>"; };
+		9E082C800423758A00919F97 /* SZClassDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZClassDescriptor.h; sourceTree = "<group>"; };
+		9E082C830423763A00919F97 /* SZClassHierarchyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZClassHierarchyDescriptor.h; sourceTree = "<group>"; };
+		9E082C840423763A00919F97 /* SZClassHierarchyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZClassHierarchyDescriptor.m; sourceTree = "<group>"; };
+		9E082C870423766C00919F97 /* SZProtocolDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZProtocolDescriptor.m; sourceTree = "<group>"; };
+		9E082C880423766C00919F97 /* SZProtocolDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZProtocolDescriptor.h; sourceTree = "<group>"; };
+		9E082C8B0423767D00919F97 /* SZVariableDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZVariableDescriptor.m; sourceTree = "<group>"; };
+		9E082C8C0423767D00919F97 /* SZVariableDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZVariableDescriptor.h; sourceTree = "<group>"; };
+		9E082C8F0423768B00919F97 /* SZMethodDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZMethodDescriptor.h; sourceTree = "<group>"; };
+		9E082C900423768B00919F97 /* SZMethodDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZMethodDescriptor.m; sourceTree = "<group>"; };
+		9E082C930423769E00919F97 /* SZFrameworkDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZFrameworkDescriptor.m; sourceTree = "<group>"; };
+		9E082C940423769F00919F97 /* SZFrameworkDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZFrameworkDescriptor.h; sourceTree = "<group>"; };
+		9E082C97042376AD00919F97 /* SZTypeDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZTypeDescriptor.h; sourceTree = "<group>"; };
+		9E082C98042376AD00919F97 /* SZTypeDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZTypeDescriptor.m; sourceTree = "<group>"; };
+		9E082C9B042376BC00919F97 /* SZProtocolImplementationDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZProtocolImplementationDescriptor.h; sourceTree = "<group>"; };
+		9E082C9C042376BD00919F97 /* SZProtocolImplementationDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZProtocolImplementationDescriptor.m; sourceTree = "<group>"; };
+		9E082C9F042376E100919F97 /* SZAbstractMethodDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZAbstractMethodDescriptor.h; sourceTree = "<group>"; };
+		9E082CA0042376E200919F97 /* SZAbstractMethodDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZAbstractMethodDescriptor.m; sourceTree = "<group>"; };
+		9E082CA3042376EC00919F97 /* NSMethodSignatureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSMethodSignatureAdditions.h; sourceTree = "<group>"; };
+		9E19B4EA04236DB80051A77F /* SZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZRuntime.m; sourceTree = "<group>"; };
+		9E19B4EB04236DB80051A77F /* SZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZRuntime.h; sourceTree = "<group>"; };
+		9E19B4EE042371AA0051A77F /* ProtocolAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProtocolAdditions.m; sourceTree = "<group>"; };
+		9E19B4EF042371AA0051A77F /* ProtocolAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProtocolAdditions.h; sourceTree = "<group>"; };
+		9E472C00054C470300B759E9 /* PBX-h-Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PBX-h-Icon.tiff"; sourceTree = "<group>"; };
+		9E472C01054C470300B759E9 /* PBX-strings-Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PBX-strings-Icon.tiff"; sourceTree = "<group>"; };
+		9E472C02054C470300B759E9 /* PBX-m-Icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PBX-m-Icon.tiff"; sourceTree = "<group>"; };
+		9E8703390430D0AF00FE947C /* MagicHatService.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MagicHatService.m; sourceTree = "<group>"; };
+		9E87033A0430D0AF00FE947C /* MagicHatService.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MagicHatService.h; sourceTree = "<group>"; };
+		9E87033B0430D0AF00FE947C /* MagicHatPreference.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MagicHatPreference.m; sourceTree = "<group>"; };
+		9E87033C0430D0AF00FE947C /* MagicHatPreference.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MagicHatPreference.h; sourceTree = "<group>"; };
+		9E8A90E5043059DE008156C2 /* MHFindPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFindPanel.h; sourceTree = "<group>"; };
+		9E8A90E6043059DE008156C2 /* MHFindPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFindPanel.m; sourceTree = "<group>"; };
+		9E8DF6AD0431B30700CCBB39 /* MHCache.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MHCache.m; sourceTree = "<group>"; };
+		9E8DF6AE0431B30700CCBB39 /* MHCache.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MHCache.h; sourceTree = "<group>"; };
+		9E8F5C620425BDD30013A430 /* MHController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHController.h; sourceTree = "<group>"; };
+		9E8F5C630425BDD30013A430 /* MHController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHController.m; sourceTree = "<group>"; };
+		9E98124B0429C4A400000107 /* SZRuntimeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZRuntimeAdditions.h; sourceTree = "<group>"; };
+		9E98124C0429C4A400000107 /* SZRuntimeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZRuntimeAdditions.m; sourceTree = "<group>"; };
+		9E98124F0429C7E900000107 /* SZCategoryDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZCategoryDescriptor.m; sourceTree = "<group>"; };
+		9E9812500429C7E900000107 /* SZCategoryDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZCategoryDescriptor.h; sourceTree = "<group>"; };
+		9E9812530429C98700000107 /* SZCategoryDescriptorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZCategoryDescriptorAdditions.m; sourceTree = SOURCE_ROOT; };
+		9E9812540429C98700000107 /* SZCategoryDescriptorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZCategoryDescriptorAdditions.h; sourceTree = SOURCE_ROOT; };
+		9E99C3400BDD25E300B63A2D /* MagicHatPreference.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MagicHatPreference.nib; path = English.lproj/MagicHatPreference.nib; sourceTree = "<group>"; };
+		9E99F1A304275CDF00E096F9 /* Previous.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Previous.gif; sourceTree = SOURCE_ROOT; };
+		9E99F1A504275CE900E096F9 /* Next.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Next.gif; sourceTree = SOURCE_ROOT; };
+		9E99F1B904276B6700E096F9 /* knob_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = knob_nib.tiff; sourceTree = "<group>"; };
+		9E99F1BB04276B7A00E096F9 /* disabled_knob_nib.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = disabled_knob_nib.tiff; sourceTree = "<group>"; };
+		9EA92E7E042866B9004D7902 /* MHComboBoxDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHComboBoxDelegate.h; sourceTree = "<group>"; };
+		9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHComboBoxDelegate.m; sourceTree = "<group>"; };
+		9EB3F7660430985600924C02 /* MagicHat.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MagicHat.icns; sourceTree = "<group>"; };
+		9EC829DA0427AC7E00222BE0 /* MagicHat.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MagicHat.tiff; sourceTree = "<group>"; };
+		9ECB6EE2042A008400000107 /* MHOpenPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHOpenPanel.h; sourceTree = "<group>"; };
+		9ECB6EE3042A008400000107 /* MHOpenPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHOpenPanel.m; sourceTree = "<group>"; };
+		9ECB6EED042A263800000107 /* MHDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDrawer.h; sourceTree = "<group>"; };
+		9ECB6EEE042A263800000107 /* MHDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDrawer.m; sourceTree = "<group>"; };
+		9EDC01BF04287A11008BF40E /* SZAbstractMethodDescriptorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZAbstractMethodDescriptorAdditions.m; sourceTree = "<group>"; };
+		9EDC01C004287A11008BF40E /* SZClassDescriptorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZClassDescriptorAdditions.m; sourceTree = SOURCE_ROOT; };
+		9EDC01C104287A11008BF40E /* SZAbstractMethodDescriptorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZAbstractMethodDescriptorAdditions.h; sourceTree = "<group>"; };
+		9EDC01C204287A11008BF40E /* SZClassDescriptorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZClassDescriptorAdditions.h; sourceTree = SOURCE_ROOT; };
+		9EDC01CA04287A2B008BF40E /* SZFrameworkDescriptorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZFrameworkDescriptorAdditions.h; sourceTree = SOURCE_ROOT; };
+		9EDC01CB04287A2B008BF40E /* SZVariableDescriptorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZVariableDescriptorAdditions.m; sourceTree = SOURCE_ROOT; };
+		9EDC01CC04287A2B008BF40E /* SZVariableDescriptorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZVariableDescriptorAdditions.h; sourceTree = SOURCE_ROOT; };
+		9EDC01CD04287A2B008BF40E /* SZFrameworkDescriptorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZFrameworkDescriptorAdditions.m; sourceTree = SOURCE_ROOT; };
+		9EDC01CE04287A2B008BF40E /* SZProtocolDescriptorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SZProtocolDescriptorAdditions.m; sourceTree = SOURCE_ROOT; };
+		9EDC01CF04287A2B008BF40E /* SZProtocolDescriptorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SZProtocolDescriptorAdditions.h; sourceTree = SOURCE_ROOT; };
+		9EDC01D604287A5D008BF40E /* NSMutableAttributedStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSMutableAttributedStringAdditions.m; sourceTree = SOURCE_ROOT; };
+		9EDC01D704287A5D008BF40E /* NSMutableAttributedStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSMutableAttributedStringAdditions.h; sourceTree = SOURCE_ROOT; };
+		9EDC01D804287A5D008BF40E /* NSTextViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSTextViewAdditions.m; sourceTree = SOURCE_ROOT; };
+		9EDC01D904287A5D008BF40E /* NSTextViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSTextViewAdditions.h; sourceTree = SOURCE_ROOT; };
+		9EDC05520428806E008BF40E /* MHTextViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTextViewDelegate.h; sourceTree = "<group>"; };
+		9EDC05530428806E008BF40E /* MHTextViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTextViewDelegate.m; sourceTree = "<group>"; };
+		9EDC055604288777008BF40E /* InternalLink.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = InternalLink.tiff; sourceTree = "<group>"; };
+		9EDC055804288783008BF40E /* HeaderLink.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = HeaderLink.tiff; sourceTree = "<group>"; };
+		9EDC055A04288792008BF40E /* DocumentationLink.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DocumentationLink.tiff; sourceTree = "<group>"; };
+		9EDC055C042887A0008BF40E /* FrameworkLink.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = FrameworkLink.tiff; sourceTree = "<group>"; };
+		9EDC055E04289122008BF40E /* NSURLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLAdditions.h; sourceTree = "<group>"; };
+		9EDC055F04289122008BF40E /* NSURLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLAdditions.m; sourceTree = "<group>"; };
+		9EDC056A0428B006008BF40E /* URLTextViewHand.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = URLTextViewHand.tiff; sourceTree = "<group>"; };
+		9EE9E05E042F46CC00000104 /* SZReferenceDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZReferenceDescriptor.h; sourceTree = "<group>"; };
+		9EE9E05F042F46CC00000104 /* SZReferenceDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZReferenceDescriptor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B9732DFDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3765C51D0CA9AC8A00394F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3765C51E0CA9AC8A00394F42 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9E19B4E904236D8B0051A77F /* Runtime */,
+				9EDC01BD042879E2008BF40E /* RuntimeUI */,
+				9E8F5C610425BDA30013A430 /* UI */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17587328FF379C6511CA2CBB /* MagicHat.app */,
+				3765C5240CA9AC8C00394F42 /* MagicHat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MagicHat */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				3765C5230CA9AC8C00394F42 /* Info-MagicHat__Upgraded_.plist */,
+			);
+			name = MagicHat;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MagicHat_Prefix.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E99C33F0BDD25E300B63A2D /* MagicHatPreference.nib */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				9E99F1A304275CDF00E096F9 /* Previous.gif */,
+				9EDC055604288777008BF40E /* InternalLink.tiff */,
+				9EDC055804288783008BF40E /* HeaderLink.tiff */,
+				9EDC056A0428B006008BF40E /* URLTextViewHand.tiff */,
+				9E99F1A504275CE900E096F9 /* Next.gif */,
+				9EDC055A04288792008BF40E /* DocumentationLink.tiff */,
+				9EDC055C042887A0008BF40E /* FrameworkLink.tiff */,
+				9E99F1B904276B6700E096F9 /* knob_nib.tiff */,
+				9E99F1BB04276B7A00E096F9 /* disabled_knob_nib.tiff */,
+				9EC829DA0427AC7E00222BE0 /* MagicHat.tiff */,
+				9EB3F7660430985600924C02 /* MagicHat.icns */,
+				9E472C00054C470300B759E9 /* PBX-h-Icon.tiff */,
+				9E472C01054C470300B759E9 /* PBX-strings-Icon.tiff */,
+				9E472C02054C470300B759E9 /* PBX-m-Icon.tiff */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E19B4E904236D8B0051A77F /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				9E082CA3042376EC00919F97 /* NSMethodSignatureAdditions.h */,
+				9E19B4EF042371AA0051A77F /* ProtocolAdditions.h */,
+				9E19B4EE042371AA0051A77F /* ProtocolAdditions.m */,
+				9E082C9F042376E100919F97 /* SZAbstractMethodDescriptor.h */,
+				9E082CA0042376E200919F97 /* SZAbstractMethodDescriptor.m */,
+				9E9812500429C7E900000107 /* SZCategoryDescriptor.h */,
+				9E98124F0429C7E900000107 /* SZCategoryDescriptor.m */,
+				9E082C800423758A00919F97 /* SZClassDescriptor.h */,
+				9E082C7F0423758A00919F97 /* SZClassDescriptor.m */,
+				9E082C830423763A00919F97 /* SZClassHierarchyDescriptor.h */,
+				9E082C840423763A00919F97 /* SZClassHierarchyDescriptor.m */,
+				9E082C940423769F00919F97 /* SZFrameworkDescriptor.h */,
+				9E082C930423769E00919F97 /* SZFrameworkDescriptor.m */,
+				9E082C8F0423768B00919F97 /* SZMethodDescriptor.h */,
+				9E082C900423768B00919F97 /* SZMethodDescriptor.m */,
+				9E082C880423766C00919F97 /* SZProtocolDescriptor.h */,
+				9E082C870423766C00919F97 /* SZProtocolDescriptor.m */,
+				9E082C9B042376BC00919F97 /* SZProtocolImplementationDescriptor.h */,
+				9E082C9C042376BD00919F97 /* SZProtocolImplementationDescriptor.m */,
+				9EE9E05E042F46CC00000104 /* SZReferenceDescriptor.h */,
+				9EE9E05F042F46CC00000104 /* SZReferenceDescriptor.m */,
+				9E19B4EB04236DB80051A77F /* SZRuntime.h */,
+				9E19B4EA04236DB80051A77F /* SZRuntime.m */,
+				9E98124B0429C4A400000107 /* SZRuntimeAdditions.h */,
+				9E98124C0429C4A400000107 /* SZRuntimeAdditions.m */,
+				9E082C97042376AD00919F97 /* SZTypeDescriptor.h */,
+				9E082C98042376AD00919F97 /* SZTypeDescriptor.m */,
+				9E082C8C0423767D00919F97 /* SZVariableDescriptor.h */,
+				9E082C8B0423767D00919F97 /* SZVariableDescriptor.m */,
+			);
+			name = Runtime;
+			sourceTree = "<group>";
+		};
+		9E8F5C610425BDA30013A430 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9E8DF6AE0431B30700CCBB39 /* MHCache.h */,
+				9E8DF6AD0431B30700CCBB39 /* MHCache.m */,
+				9EA92E7E042866B9004D7902 /* MHComboBoxDelegate.h */,
+				9EA92E7F042866B9004D7902 /* MHComboBoxDelegate.m */,
+				9E8F5C620425BDD30013A430 /* MHController.h */,
+				9E8F5C630425BDD30013A430 /* MHController.m */,
+				9ECB6EED042A263800000107 /* MHDrawer.h */,
+				9ECB6EEE042A263800000107 /* MHDrawer.m */,
+				9E8A90E5043059DE008156C2 /* MHFindPanel.h */,
+				9E8A90E6043059DE008156C2 /* MHFindPanel.m */,
+				9ECB6EE2042A008400000107 /* MHOpenPanel.h */,
+				9ECB6EE3042A008400000107 /* MHOpenPanel.m */,
+				9EDC05520428806E008BF40E /* MHTextViewDelegate.h */,
+				9EDC05530428806E008BF40E /* MHTextViewDelegate.m */,
+				9E87033C0430D0AF00FE947C /* MagicHatPreference.h */,
+				9E87033B0430D0AF00FE947C /* MagicHatPreference.m */,
+				9E87033A0430D0AF00FE947C /* MagicHatService.h */,
+				9E8703390430D0AF00FE947C /* MagicHatService.m */,
+				9EDC01D704287A5D008BF40E /* NSMutableAttributedStringAdditions.h */,
+				9EDC01D604287A5D008BF40E /* NSMutableAttributedStringAdditions.m */,
+				9EDC01D904287A5D008BF40E /* NSTextViewAdditions.h */,
+				9EDC01D804287A5D008BF40E /* NSTextViewAdditions.m */,
+				9EDC055E04289122008BF40E /* NSURLAdditions.h */,
+				9EDC055F04289122008BF40E /* NSURLAdditions.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9EDC01BD042879E2008BF40E /* RuntimeUI */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC01C104287A11008BF40E /* SZAbstractMethodDescriptorAdditions.h */,
+				9EDC01BF04287A11008BF40E /* SZAbstractMethodDescriptorAdditions.m */,
+				9E9812540429C98700000107 /* SZCategoryDescriptorAdditions.h */,
+				9E9812530429C98700000107 /* SZCategoryDescriptorAdditions.m */,
+				9EDC01C204287A11008BF40E /* SZClassDescriptorAdditions.h */,
+				9EDC01C004287A11008BF40E /* SZClassDescriptorAdditions.m */,
+				9EDC01CA04287A2B008BF40E /* SZFrameworkDescriptorAdditions.h */,
+				9EDC01CD04287A2B008BF40E /* SZFrameworkDescriptorAdditions.m */,
+				9EDC01CF04287A2B008BF40E /* SZProtocolDescriptorAdditions.h */,
+				9EDC01CE04287A2B008BF40E /* SZProtocolDescriptorAdditions.m */,
+				9EDC01CC04287A2B008BF40E /* SZVariableDescriptorAdditions.h */,
+				9EDC01CB04287A2B008BF40E /* SZVariableDescriptorAdditions.m */,
+			);
+			name = RuntimeUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29B97327FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CA4F650368D2AA00C91783 /* MagicHat_Prefix.h in Headers */,
+				9E19B4ED04236DB80051A77F /* SZRuntime.h in Headers */,
+				9E19B4F1042371AA0051A77F /* ProtocolAdditions.h in Headers */,
+				9E082C820423758A00919F97 /* SZClassDescriptor.h in Headers */,
+				9E082C850423763A00919F97 /* SZClassHierarchyDescriptor.h in Headers */,
+				9E082C8A0423766C00919F97 /* SZProtocolDescriptor.h in Headers */,
+				9E082C8E0423767D00919F97 /* SZVariableDescriptor.h in Headers */,
+				9E082C910423768B00919F97 /* SZMethodDescriptor.h in Headers */,
+				9E082C960423769F00919F97 /* SZFrameworkDescriptor.h in Headers */,
+				9E082C99042376AD00919F97 /* SZTypeDescriptor.h in Headers */,
+				9E082C9D042376BD00919F97 /* SZProtocolImplementationDescriptor.h in Headers */,
+				9E082CA1042376E200919F97 /* SZAbstractMethodDescriptor.h in Headers */,
+				9E082CA4042376EC00919F97 /* NSMethodSignatureAdditions.h in Headers */,
+				9E8F5C640425BDD30013A430 /* MHController.h in Headers */,
+				9EA92E80042866B9004D7902 /* MHComboBoxDelegate.h in Headers */,
+				9EDC01C704287A11008BF40E /* SZAbstractMethodDescriptorAdditions.h in Headers */,
+				9EDC01C804287A11008BF40E /* SZClassDescriptorAdditions.h in Headers */,
+				9EDC01D004287A2B008BF40E /* SZFrameworkDescriptorAdditions.h in Headers */,
+				9EDC01D204287A2B008BF40E /* SZVariableDescriptorAdditions.h in Headers */,
+				9EDC01D504287A2B008BF40E /* SZProtocolDescriptorAdditions.h in Headers */,
+				9EDC01DB04287A5D008BF40E /* NSMutableAttributedStringAdditions.h in Headers */,
+				9EDC01DD04287A5D008BF40E /* NSTextViewAdditions.h in Headers */,
+				9EDC05540428806E008BF40E /* MHTextViewDelegate.h in Headers */,
+				9EDC056004289122008BF40E /* NSURLAdditions.h in Headers */,
+				9E98124D0429C4A400000107 /* SZRuntimeAdditions.h in Headers */,
+				9E9812520429C7E900000107 /* SZCategoryDescriptor.h in Headers */,
+				9E9812560429C98700000107 /* SZCategoryDescriptorAdditions.h in Headers */,
+				9ECB6EE4042A008400000107 /* MHOpenPanel.h in Headers */,
+				9ECB6EEF042A263800000107 /* MHDrawer.h in Headers */,
+				9EE9E060042F46CC00000104 /* SZReferenceDescriptor.h in Headers */,
+				9E8A90E7043059DE008156C2 /* MHFindPanel.h in Headers */,
+				9E87033E0430D0AF00FE947C /* MagicHatService.h in Headers */,
+				9E8703400430D0AF00FE947C /* MagicHatPreference.h in Headers */,
+				9E8DF6B00431B30700CCBB39 /* MHCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3765C4C60CA9AC8A00394F42 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3765C4C70CA9AC8A00394F42 /* MagicHat_Prefix.h in Headers */,
+				3765C4C80CA9AC8A00394F42 /* SZRuntime.h in Headers */,
+				3765C4C90CA9AC8A00394F42 /* ProtocolAdditions.h in Headers */,
+				3765C4CA0CA9AC8A00394F42 /* SZClassDescriptor.h in Headers */,
+				3765C4CB0CA9AC8A00394F42 /* SZClassHierarchyDescriptor.h in Headers */,
+				3765C4CC0CA9AC8A00394F42 /* SZProtocolDescriptor.h in Headers */,
+				3765C4CD0CA9AC8A00394F42 /* SZVariableDescriptor.h in Headers */,
+				3765C4CE0CA9AC8A00394F42 /* SZMethodDescriptor.h in Headers */,
+				3765C4CF0CA9AC8A00394F42 /* SZFrameworkDescriptor.h in Headers */,
+				3765C4D00CA9AC8A00394F42 /* SZTypeDescriptor.h in Headers */,
+				3765C4D10CA9AC8A00394F42 /* SZProtocolImplementationDescriptor.h in Headers */,
+				3765C4D20CA9AC8A00394F42 /* SZAbstractMethodDescriptor.h in Headers */,
+				3765C4D30CA9AC8A00394F42 /* NSMethodSignatureAdditions.h in Headers */,
+				3765C4D40CA9AC8A00394F42 /* MHController.h in Headers */,
+				3765C4D50CA9AC8A00394F42 /* MHComboBoxDelegate.h in Headers */,
+				3765C4D60CA9AC8A00394F42 /* SZAbstractMethodDescriptorAdditions.h in Headers */,
+				3765C4D70CA9AC8A00394F42 /* SZClassDescriptorAdditions.h in Headers */,
+				3765C4D80CA9AC8A00394F42 /* SZFrameworkDescriptorAdditions.h in Headers */,
+				3765C4D90CA9AC8A00394F42 /* SZVariableDescriptorAdditions.h in Headers */,
+				3765C4DA0CA9AC8A00394F42 /* SZProtocolDescriptorAdditions.h in Headers */,
+				3765C4DB0CA9AC8A00394F42 /* NSMutableAttributedStringAdditions.h in Headers */,
+				3765C4DC0CA9AC8A00394F42 /* NSTextViewAdditions.h in Headers */,
+				3765C4DD0CA9AC8A00394F42 /* MHTextViewDelegate.h in Headers */,
+				3765C4DE0CA9AC8A00394F42 /* NSURLAdditions.h in Headers */,
+				3765C4DF0CA9AC8A00394F42 /* SZRuntimeAdditions.h in Headers */,
+				3765C4E00CA9AC8A00394F42 /* SZCategoryDescriptor.h in Headers */,
+				3765C4E10CA9AC8A00394F42 /* SZCategoryDescriptorAdditions.h in Headers */,
+				3765C4E20CA9AC8A00394F42 /* MHOpenPanel.h in Headers */,
+				3765C4E30CA9AC8A00394F42 /* MHDrawer.h in Headers */,
+				3765C4E40CA9AC8A00394F42 /* SZReferenceDescriptor.h in Headers */,
+				3765C4E50CA9AC8A00394F42 /* MHFindPanel.h in Headers */,
+				3765C4E60CA9AC8A00394F42 /* MagicHatService.h in Headers */,
+				3765C4E70CA9AC8A00394F42 /* MagicHatPreference.h in Headers */,
+				3765C4E80CA9AC8A00394F42 /* MHCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3765C4C50CA9AC8A00394F42 /* MagicHat (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3765C51F0CA9AC8A00394F42 /* Build configuration list for PBXNativeTarget "MagicHat (Upgraded)" */;
+			buildPhases = (
+				3765C4C60CA9AC8A00394F42 /* Headers */,
+				3765C4E90CA9AC8A00394F42 /* Resources */,
+				3765C4FB0CA9AC8A00394F42 /* Sources */,
+				3765C51D0CA9AC8A00394F42 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MagicHat (Upgraded)";
+			productInstallPath = "$(HOME)/Applications";
+			productName = MagicHat;
+			productReference = 3765C5240CA9AC8C00394F42 /* MagicHat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3765C4BE0CA9AC7500394F42 /* Build configuration list for PBXProject "MagicHat" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MagicHat */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3765C4C50CA9AC8A00394F42 /* MagicHat (Upgraded) */,
+				29B97326FDCFA39411CA2CEA /* MagicHat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29B97328FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96DCFE201CFB7F000001 /* MainMenu.nib in Resources */,
+				089C165EFE840E0CC02AAC07 /* InfoPlist.strings in Resources */,
+				9E99F1A404275CDF00E096F9 /* Previous.gif in Resources */,
+				9E99F1A604275CE900E096F9 /* Next.gif in Resources */,
+				9E99F1BA04276B6700E096F9 /* knob_nib.tiff in Resources */,
+				9E99F1BC04276B7A00E096F9 /* disabled_knob_nib.tiff in Resources */,
+				9EC829DB0427AC7E00222BE0 /* MagicHat.tiff in Resources */,
+				9EDC055704288777008BF40E /* InternalLink.tiff in Resources */,
+				9EDC055904288783008BF40E /* HeaderLink.tiff in Resources */,
+				9EDC055B04288792008BF40E /* DocumentationLink.tiff in Resources */,
+				9EDC055D042887A0008BF40E /* FrameworkLink.tiff in Resources */,
+				9EDC056B0428B006008BF40E /* URLTextViewHand.tiff in Resources */,
+				9EB3F7670430985600924C02 /* MagicHat.icns in Resources */,
+				9E472C03054C470300B759E9 /* PBX-h-Icon.tiff in Resources */,
+				9E472C04054C470300B759E9 /* PBX-strings-Icon.tiff in Resources */,
+				9E472C05054C470300B759E9 /* PBX-m-Icon.tiff in Resources */,
+				9E99C3410BDD25E300B63A2D /* MagicHatPreference.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3765C4E90CA9AC8A00394F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3765C4EA0CA9AC8A00394F42 /* MainMenu.nib in Resources */,
+				3765C4EB0CA9AC8A00394F42 /* InfoPlist.strings in Resources */,
+				3765C4EC0CA9AC8A00394F42 /* Previous.gif in Resources */,
+				3765C4ED0CA9AC8A00394F42 /* Next.gif in Resources */,
+				3765C4EE0CA9AC8A00394F42 /* knob_nib.tiff in Resources */,
+				3765C4EF0CA9AC8A00394F42 /* disabled_knob_nib.tiff in Resources */,
+				3765C4F00CA9AC8A00394F42 /* MagicHat.tiff in Resources */,
+				3765C4F10CA9AC8A00394F42 /* InternalLink.tiff in Resources */,
+				3765C4F20CA9AC8A00394F42 /* HeaderLink.tiff in Resources */,
+				3765C4F30CA9AC8A00394F42 /* DocumentationLink.tiff in Resources */,
+				3765C4F40CA9AC8A00394F42 /* FrameworkLink.tiff in Resources */,
+				3765C4F50CA9AC8A00394F42 /* URLTextViewHand.tiff in Resources */,
+				3765C4F60CA9AC8A00394F42 /* MagicHat.icns in Resources */,
+				3765C4F70CA9AC8A00394F42 /* PBX-h-Icon.tiff in Resources */,
+				3765C4F80CA9AC8A00394F42 /* PBX-strings-Icon.tiff in Resources */,
+				3765C4F90CA9AC8A00394F42 /* PBX-m-Icon.tiff in Resources */,
+				3765C4FA0CA9AC8A00394F42 /* MagicHatPreference.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29B9732BFDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B9732CFDCFA39411CA2CEA /* main.m in Sources */,
+				9E19B4EC04236DB80051A77F /* SZRuntime.m in Sources */,
+				9E19B4F0042371AA0051A77F /* ProtocolAdditions.m in Sources */,
+				9E082C810423758A00919F97 /* SZClassDescriptor.m in Sources */,
+				9E082C860423763A00919F97 /* SZClassHierarchyDescriptor.m in Sources */,
+				9E082C890423766C00919F97 /* SZProtocolDescriptor.m in Sources */,
+				9E082C8D0423767D00919F97 /* SZVariableDescriptor.m in Sources */,
+				9E082C920423768B00919F97 /* SZMethodDescriptor.m in Sources */,
+				9E082C950423769F00919F97 /* SZFrameworkDescriptor.m in Sources */,
+				9E082C9A042376AD00919F97 /* SZTypeDescriptor.m in Sources */,
+				9E082C9E042376BD00919F97 /* SZProtocolImplementationDescriptor.m in Sources */,
+				9E082CA2042376E200919F97 /* SZAbstractMethodDescriptor.m in Sources */,
+				9E8F5C650425BDD30013A430 /* MHController.m in Sources */,
+				9EA92E81042866B9004D7902 /* MHComboBoxDelegate.m in Sources */,
+				9EDC01C504287A11008BF40E /* SZAbstractMethodDescriptorAdditions.m in Sources */,
+				9EDC01C604287A11008BF40E /* SZClassDescriptorAdditions.m in Sources */,
+				9EDC01D104287A2B008BF40E /* SZVariableDescriptorAdditions.m in Sources */,
+				9EDC01D304287A2B008BF40E /* SZFrameworkDescriptorAdditions.m in Sources */,
+				9EDC01D404287A2B008BF40E /* SZProtocolDescriptorAdditions.m in Sources */,
+				9EDC01DA04287A5D008BF40E /* NSMutableAttributedStringAdditions.m in Sources */,
+				9EDC01DC04287A5D008BF40E /* NSTextViewAdditions.m in Sources */,
+				9EDC05550428806E008BF40E /* MHTextViewDelegate.m in Sources */,
+				9EDC056104289122008BF40E /* NSURLAdditions.m in Sources */,
+				9E98124E0429C4A400000107 /* SZRuntimeAdditions.m in Sources */,
+				9E9812510429C7E900000107 /* SZCategoryDescriptor.m in Sources */,
+				9E9812550429C98700000107 /* SZCategoryDescriptorAdditions.m in Sources */,
+				9ECB6EE5042A008400000107 /* MHOpenPanel.m in Sources */,
+				9ECB6EF0042A263800000107 /* MHDrawer.m in Sources */,
+				9EE9E061042F46CC00000104 /* SZReferenceDescriptor.m in Sources */,
+				9E8A90E8043059DE008156C2 /* MHFindPanel.m in Sources */,
+				9E87033D0430D0AF00FE947C /* MagicHatService.m in Sources */,
+				9E87033F0430D0AF00FE947C /* MagicHatPreference.m in Sources */,
+				9E8DF6AF0431B30700CCBB39 /* MHCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3765C4FB0CA9AC8A00394F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3765C4FC0CA9AC8A00394F42 /* main.m in Sources */,
+				3765C4FD0CA9AC8A00394F42 /* SZRuntime.m in Sources */,
+				3765C4FE0CA9AC8A00394F42 /* ProtocolAdditions.m in Sources */,
+				3765C4FF0CA9AC8A00394F42 /* SZClassDescriptor.m in Sources */,
+				3765C5000CA9AC8A00394F42 /* SZClassHierarchyDescriptor.m in Sources */,
+				3765C5010CA9AC8A00394F42 /* SZProtocolDescriptor.m in Sources */,
+				3765C5020CA9AC8A00394F42 /* SZVariableDescriptor.m in Sources */,
+				3765C5030CA9AC8A00394F42 /* SZMethodDescriptor.m in Sources */,
+				3765C5040CA9AC8A00394F42 /* SZFrameworkDescriptor.m in Sources */,
+				3765C5050CA9AC8A00394F42 /* SZTypeDescriptor.m in Sources */,
+				3765C5060CA9AC8A00394F42 /* SZProtocolImplementationDescriptor.m in Sources */,
+				3765C5070CA9AC8A00394F42 /* SZAbstractMethodDescriptor.m in Sources */,
+				3765C5080CA9AC8A00394F42 /* MHController.m in Sources */,
+				3765C5090CA9AC8A00394F42 /* MHComboBoxDelegate.m in Sources */,
+				3765C50A0CA9AC8A00394F42 /* SZAbstractMethodDescriptorAdditions.m in Sources */,
+				3765C50B0CA9AC8A00394F42 /* SZClassDescriptorAdditions.m in Sources */,
+				3765C50C0CA9AC8A00394F42 /* SZVariableDescriptorAdditions.m in Sources */,
+				3765C50D0CA9AC8A00394F42 /* SZFrameworkDescriptorAdditions.m in Sources */,
+				3765C50E0CA9AC8A00394F42 /* SZProtocolDescriptorAdditions.m in Sources */,
+				3765C50F0CA9AC8A00394F42 /* NSMutableAttributedStringAdditions.m in Sources */,
+				3765C5100CA9AC8A00394F42 /* NSTextViewAdditions.m in Sources */,
+				3765C5110CA9AC8A00394F42 /* MHTextViewDelegate.m in Sources */,
+				3765C5120CA9AC8A00394F42 /* NSURLAdditions.m in Sources */,
+				3765C5130CA9AC8A00394F42 /* SZRuntimeAdditions.m in Sources */,
+				3765C5140CA9AC8A00394F42 /* SZCategoryDescriptor.m in Sources */,
+				3765C5150CA9AC8A00394F42 /* SZCategoryDescriptorAdditions.m in Sources */,
+				3765C5160CA9AC8A00394F42 /* MHOpenPanel.m in Sources */,
+				3765C5170CA9AC8A00394F42 /* MHDrawer.m in Sources */,
+				3765C5180CA9AC8A00394F42 /* SZReferenceDescriptor.m in Sources */,
+				3765C5190CA9AC8A00394F42 /* MHFindPanel.m in Sources */,
+				3765C51A0CA9AC8A00394F42 /* MagicHatService.m in Sources */,
+				3765C51B0CA9AC8A00394F42 /* MagicHatPreference.m in Sources */,
+				3765C51C0CA9AC8A00394F42 /* MHCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		9E99C33F0BDD25E300B63A2D /* MagicHatPreference.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E99C3400BDD25E300B63A2D /* MagicHatPreference.nib */,
+			);
+			name = MagicHatPreference.nib;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3765C4B80CA9AC7400394F42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		3765C4B90CA9AC7400394F42 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		3765C4BA0CA9AC7400394F42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+		3765C4BB0CA9AC7400394F42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = MagicHat_Prefix.h;
+				PRODUCT_NAME = MagicHat;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Development;
+		};
+		3765C4BC0CA9AC7400394F42 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = MagicHat_Prefix.h;
+				PRODUCT_NAME = MagicHat;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Deployment;
+		};
+		3765C4BD0CA9AC7400394F42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = MagicHat_Prefix.h;
+				PRODUCT_NAME = MagicHat;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		3765C5200CA9AC8A00394F42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_ENABLE_OBJC_GC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MagicHat_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-MagicHat__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = MagicHat;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Development;
+		};
+		3765C5210CA9AC8A00394F42 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_OBJC_GC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MagicHat_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-MagicHat__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = MagicHat;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Deployment;
+		};
+		3765C5220CA9AC8A00394F42 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_OBJC_GC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MagicHat_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-MagicHat__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = MagicHat;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3765C4BE0CA9AC7500394F42 /* Build configuration list for PBXProject "MagicHat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3765C4B80CA9AC7400394F42 /* Development */,
+				3765C4B90CA9AC7400394F42 /* Deployment */,
+				3765C4BA0CA9AC7400394F42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3765C4BF0CA9AC7500394F42 /* Build configuration list for PBXApplicationTarget "MagicHat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3765C4BB0CA9AC7400394F42 /* Development */,
+				3765C4BC0CA9AC7400394F42 /* Deployment */,
+				3765C4BD0CA9AC7400394F42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3765C51F0CA9AC8A00394F42 /* Build configuration list for PBXNativeTarget "MagicHat (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3765C5200CA9AC8A00394F42 /* Development */,
+				3765C5210CA9AC8A00394F42 /* Deployment */,
+				3765C5220CA9AC8A00394F42 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

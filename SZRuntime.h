@@ -32,6 +32,7 @@
 	@private
 }
 
+//+ (void) _invalidateCatagories;
 + (unsigned int) classCount;
 
 + (NSSet*) classes;
