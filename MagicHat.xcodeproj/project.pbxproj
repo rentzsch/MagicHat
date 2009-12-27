@@ -20,6 +20,7 @@
 		794A410210E8104600A8DE20 /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A410110E8104600A8DE20 /* _MachOHeaderMO.m */; };
 		794A410410E8104600A8DE20 /* _MachOSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A410310E8104600A8DE20 /* _MachOSectionMO.m */; };
 		794A410610E8104700A8DE20 /* _MachOSegmentMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A410510E8104600A8DE20 /* _MachOSegmentMO.m */; };
+		794A411D10E8113700A8DE20 /* magichat.icns in Resources */ = {isa = PBXBuildFile; fileRef = 794A411C10E8113700A8DE20 /* magichat.icns */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -58,6 +59,7 @@
 		794A410110E8104600A8DE20 /* _MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOHeaderMO.m; sourceTree = "<group>"; };
 		794A410310E8104600A8DE20 /* _MachOSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSectionMO.m; sourceTree = "<group>"; };
 		794A410510E8104600A8DE20 /* _MachOSegmentMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentMO.m; sourceTree = "<group>"; };
+		794A411C10E8113700A8DE20 /* magichat.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = magichat.icns; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MagicHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				794A411C10E8113700A8DE20 /* magichat.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
@@ -235,6 +238,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
 				8F0C5D830EADC1EE007FBAA3 /* AppDelegate.rb in Resources */,
+				794A411D10E8113700A8DE20 /* magichat.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
