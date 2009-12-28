@@ -19,16 +19,6 @@ class AppDelegate
     NSApp.terminate(nil)
   end
 
-  # Returns the support folder for the application, used to store the Core Data
-  # store file.  This code uses a folder named "MyGreatApp" for
-  # the content, either in the NSApplicationSupportDirectory location or (if the
-  # former cannot be found), the system's temporary directory.
-  def applicationSupportFolder
-    paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, true)
-    basePath = (paths.count > 0) ? paths[0] : NSTemporaryDirectory()
-    return basePath.stringByAppendingPathComponent("MagicHat")
-  end
-
   # Creates and returns the managed object model for the application 
   # by merging all of the models found in the application bundle.
   def managedObjectModel
@@ -51,18 +41,9 @@ class AppDelegate
     end
 
     error = Pointer.new_with_type('@')
-    
-    fileManager = NSFileManager.defaultManager
-    applicationSupportFolder = self.applicationSupportFolder
-    
-    if !fileManager.fileExistsAtPath(applicationSupportFolder, isDirectory:nil)
-      fileManager.createDirectoryAtPath(applicationSupportFolder, attributes:nil)
-    end
-    
-    url = NSURL.fileURLWithPath(applicationSupportFolder.stringByAppendingPathComponent("MagicHat.xml"))
     @persistentStoreCoordinator = NSPersistentStoreCoordinator.alloc.initWithManagedObjectModel(self.managedObjectModel)
-    if !@persistentStoreCoordinator.addPersistentStoreWithType(NSXMLStoreType, configuration:nil, URL:url, options:nil, error:error)
-      NSApplication.sharedApplication.presentError(error[0])
+    unless @persistentStoreCoordinator.addPersistentStoreWithType(NSInMemoryStoreType, configuration:nil, URL:nil, options:nil, error:error)
+      NSApp.presentError(error[0])
     end
 
     return @persistentStoreCoordinator
@@ -93,8 +74,8 @@ class AppDelegate
   # are presented to the user.
   def saveAction(sender)
     error = Pointer.new_with_type('@')
-    if !self.managedObjectContext.save(error)
-      NSApplication.sharedApplication.presentError(error[0])
+    unless self.managedObjectContext.save(error)
+      NSApp.presentError(error[0])
     end
   end
 
@@ -117,7 +98,7 @@ class AppDelegate
           # Typically, this process should be altered to include application-specific 
           # recovery steps.  
 
-          errorResult = NSApplication.sharedApplication.presentError(error[0])
+          errorResult = NSApp.presentError(error[0])
           
           if errorResult
             reply = NSTerminateCancel
