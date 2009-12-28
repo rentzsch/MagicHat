@@ -8,12 +8,14 @@
 
 class AppDelegate
   attr_writer :window
+  attr_writer :webview
   
   def applicationDidFinishLaunching(notification)
+    puts @webview
     machoFile = MachOFileMO.insertInManagedObjectContext(managedObjectContext())
     
     error = Pointer.new_with_type('@')
-    unless machoFile.setFileURL(NSURL.fileURLWithPath('/bin/ls'), error:error)
+    unless machoFile.setFileURL(NSURL.fileURLWithPath('/Applications/Stickies.app/Contents/MacOS/Stickies'), error:error)
         NSApp.presentError(error[0])
     end
     NSApp.terminate(nil)

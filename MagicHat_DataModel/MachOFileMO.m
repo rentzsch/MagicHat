@@ -22,7 +22,7 @@ void ofile_processor(struct ofile *ofile, char *arch_name, void *cookie) {
     struct arch_flag arch_flags[kArchFlagCount];
     
     ofile_process(
-        "/Applications/Stickies.app/Contents/MacOS/Stickies",        //  name
+        (char*)[[url_ path] fileSystemRepresentation], //  name
         arch_flags,       //  arch_flags
         kArchFlagCount,   //  narch_flags
         TRUE,             //  all_archs

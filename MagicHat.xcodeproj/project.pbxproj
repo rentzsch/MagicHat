@@ -23,6 +23,8 @@
 		794A416210E8131400A8DE20 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416110E8131400A8DE20 /* print.c */; };
 		794A416410E8131900A8DE20 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416310E8131900A8DE20 /* swap_headers.c */; };
 		794A416610E8132200A8DE20 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416510E8132200A8DE20 /* guess_short_name.c */; };
+		799CBABD10E89875004D7ED6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799CBABC10E89875004D7ED6 /* WebKit.framework */; };
+		799CBAC410E89940004D7ED6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799CBAC210E89940004D7ED6 /* MainMenu.xib */; };
 		79DEC5D610E88D340078018B /* MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DEC5D510E88D340078018B /* MachOCommandMO.m */; };
 		79DEC5D810E88D340078018B /* MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DEC5D710E88D340078018B /* MachOFileMO.m */; };
 		79DEC5DA10E88D350078018B /* MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DEC5D910E88D350078018B /* MachOHeaderMO.m */; };
@@ -33,7 +35,6 @@
 		79DEC5E910E88D360078018B /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DEC5E810E88D360078018B /* _MachOHeaderMO.m */; };
 		79DEC5EB10E88D360078018B /* _MachOSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DEC5EA10E88D360078018B /* _MachOSectionMO.m */; };
 		79DEC5ED10E88D370078018B /* _MachOSegmentMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DEC5EC10E88D370078018B /* _MachOSegmentMO.m */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -45,7 +46,6 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4DE339F60D74FCDD00ADB6EE /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
@@ -64,6 +64,8 @@
 		794A416110E8131400A8DE20 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
 		794A416310E8131900A8DE20 /* swap_headers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swap_headers.c; sourceTree = "<group>"; };
 		794A416510E8132200A8DE20 /* guess_short_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guess_short_name.c; sourceTree = "<group>"; };
+		799CBABC10E89875004D7ED6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		799CBAC310E89940004D7ED6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		79DEC5D010E88D330078018B /* MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOCommandMO.h; sourceTree = "<group>"; };
 		79DEC5D110E88D330078018B /* MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileMO.h; sourceTree = "<group>"; };
 		79DEC5D210E88D340078018B /* MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOHeaderMO.h; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
+				799CBABD10E89875004D7ED6 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +117,7 @@
 			children = (
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				799CBABC10E89875004D7ED6 /* WebKit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -163,10 +167,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				799CBAC210E89940004D7ED6 /* MainMenu.xib */,
 				794A411C10E8113700A8DE20 /* magichat.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -287,11 +291,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
 				8F0C5D830EADC1EE007FBAA3 /* AppDelegate.rb in Resources */,
 				794A411D10E8113700A8DE20 /* magichat.icns in Resources */,
+				799CBAC410E89940004D7ED6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,12 +344,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+		799CBAC210E89940004D7ED6 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				799CBAC310E89940004D7ED6 /* English */,
 			);
-			name = MainMenu.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
