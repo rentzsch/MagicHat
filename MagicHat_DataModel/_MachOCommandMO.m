@@ -38,6 +38,31 @@
 
 
 
+@dynamic name;
+
+
+
+
+
+
+@dynamic cmdsize;
+
+
+
+- (int)cmdsizeValue {
+	NSNumber *result = [self cmdsize];
+	return result ? [result intValue] : 0;
+}
+
+- (void)setCmdsizeValue:(int)value_ {
+	[self setCmdsize:[NSNumber numberWithInt:value_]];
+}
+
+
+
+
+
+
 @dynamic segments;
 
 	

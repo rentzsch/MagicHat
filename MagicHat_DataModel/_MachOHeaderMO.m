@@ -20,6 +20,13 @@
 
 
 
+@dynamic archName;
+
+
+
+
+
+
 @dynamic magic;
 
 

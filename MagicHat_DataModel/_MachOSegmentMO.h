@@ -16,6 +16,12 @@
 
 
 
+@property (nonatomic, retain) NSString *name;
+
+//- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
+
+
+
 
 @property (nonatomic, retain) MachOCommandMO* command;
 //- (BOOL)validateCommand:(id*)value_ error:(NSError**)error_;

@@ -15,6 +15,12 @@
 
 
 
+@property (nonatomic, retain) NSString *name;
+
+//- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
+
+
+
 
 @property (nonatomic, retain) MachOSegmentMO* segment;
 //- (BOOL)validateSegment:(id*)value_ error:(NSError**)error_;

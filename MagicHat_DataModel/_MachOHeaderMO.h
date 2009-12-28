@@ -16,6 +16,12 @@
 
 
 
+@property (nonatomic, retain) NSString *archName;
+
+//- (BOOL)validateArchName:(id*)value_ error:(NSError**)error_;
+
+
+
 @property (nonatomic, retain) NSNumber *magic;
 
 - (int)magicValue;

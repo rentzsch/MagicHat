@@ -25,6 +25,21 @@
 
 
 
+@property (nonatomic, retain) NSString *name;
+
+//- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSNumber *cmdsize;
+
+- (int)cmdsizeValue;
+- (void)setCmdsizeValue:(int)value_;
+
+//- (BOOL)validateCmdsize:(id*)value_ error:(NSError**)error_;
+
+
+
 
 @property (nonatomic, retain) NSSet* segments;
 

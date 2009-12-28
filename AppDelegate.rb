@@ -8,6 +8,16 @@
 
 class AppDelegate
   attr_writer :window
+  
+  def applicationDidFinishLaunching(notification)
+    machoFile = MachOFileMO.insertInManagedObjectContext(managedObjectContext())
+    
+    error = Pointer.new_with_type('@')
+    unless machoFile.setFileURL(NSURL.fileURLWithPath('/bin/ls'), error:error)
+        NSApp.presentError(error[0])
+    end
+    NSApp.terminate(nil)
+  end
 
   # Returns the support folder for the application, used to store the Core Data
   # store file.  This code uses a folder named "MyGreatApp" for

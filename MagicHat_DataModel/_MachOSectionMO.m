@@ -20,6 +20,13 @@
 
 
 
+@dynamic name;
+
+
+
+
+
+
 @dynamic segment;
 
 	
