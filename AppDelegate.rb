@@ -27,7 +27,7 @@ class AppDelegate
             if command.kind_of?(MachOSegmentCommandMO)
                 output += "\t\tsegment: #{command.segname}\n"
                 command.sections.allObjects.each do |section|
-                    output += "\t\t\tsection: #{section.segname} #{section.sectname}\n"
+                    output += "\t\t\tsection: #{section.sectname}\n"
                 end
             end
         end

@@ -2,6 +2,7 @@
 #import "ASSIGN.h"
 #import "stuff/bytesex.h"
 #import "MachOSegmentSectionMO.h"
+#import "NSString+jr_stringWithUTF8StringmaxLength.h"
 
 @implementation MachOSegmentCommandMO
 
@@ -11,7 +12,7 @@
         case LC_SEGMENT: {
             struct segment_command *segmentCommand = (struct segment_command*)swappedLoadCommand;
             
-            self.segname = [NSString stringWithUTF8String:segmentCommand->segname];
+            self.segname = [NSString jr_stringWithUTF8String:segmentCommand->segname maxLength:sizeof(segmentCommand->segname)];
             ASSIGN_ATTR(self, vmaddr, segmentCommand);
             ASSIGN_ATTR(self, vmsize, segmentCommand);
             ASSIGN_ATTR(self, fileoff, segmentCommand);
@@ -29,8 +30,8 @@
                 struct section *sectionIter = &sections[sectionIndex];
                 MachOSegmentSectionMO *section = [MachOSegmentSectionMO insertInManagedObjectContext:[self managedObjectContext]];
                 
-                section.sectname = [NSString stringWithUTF8String:sectionIter->sectname];
-                section.segname = [NSString stringWithUTF8String:sectionIter->segname];
+                section.sectname = [NSString jr_stringWithUTF8String:sectionIter->sectname maxLength:sizeof(sectionIter->sectname)];
+                section.segname = [NSString jr_stringWithUTF8String:sectionIter->segname maxLength:sizeof(sectionIter->segname)];
                 ASSIGN_ATTR(section, addr, sectionIter);
                 ASSIGN_ATTR(section, size, sectionIter);
                 ASSIGN_ATTR(section, offset, sectionIter);
@@ -48,7 +49,7 @@
         case LC_SEGMENT_64: {
             struct segment_command_64 *segmentCommand = (struct segment_command_64*)swappedLoadCommand;
             
-            self.segname = [NSString stringWithUTF8String:segmentCommand->segname];
+            self.segname = [NSString jr_stringWithUTF8String:segmentCommand->segname maxLength:sizeof(segmentCommand->segname)];
             ASSIGN_ATTR(self, vmaddr, segmentCommand);
             ASSIGN_ATTR(self, vmsize, segmentCommand);
             ASSIGN_ATTR(self, fileoff, segmentCommand);
@@ -66,8 +67,8 @@
                 struct section_64 *sectionIter = &sections[sectionIndex];
                 MachOSegmentSectionMO *section = [MachOSegmentSectionMO insertInManagedObjectContext:[self managedObjectContext]];
                 
-                section.sectname = [NSString stringWithUTF8String:sectionIter->sectname];
-                section.segname = [NSString stringWithUTF8String:sectionIter->segname];
+                section.sectname = [NSString jr_stringWithUTF8String:sectionIter->sectname maxLength:sizeof(sectionIter->sectname)];
+                section.segname = [NSString jr_stringWithUTF8String:sectionIter->segname maxLength:sizeof(sectionIter->segname)];
                 ASSIGN_ATTR(section, addr, sectionIter);
                 ASSIGN_ATTR(section, size, sectionIter);
                 ASSIGN_ATTR(section, offset, sectionIter);

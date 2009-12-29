@@ -23,23 +23,36 @@
 		794A416210E8131400A8DE20 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416110E8131400A8DE20 /* print.c */; };
 		794A416410E8131900A8DE20 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416310E8131900A8DE20 /* swap_headers.c */; };
 		794A416610E8132200A8DE20 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416510E8132200A8DE20 /* guess_short_name.c */; };
-		795FD61710E9A87300120059 /* MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD61610E9A87300120059 /* MachOCommandMO.m */; };
-		795FD61910E9A87400120059 /* MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD61810E9A87300120059 /* MachOFileMO.m */; };
-		795FD61B10E9A87400120059 /* MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD61A10E9A87400120059 /* MachOHeaderMO.m */; };
-		795FD61D10E9A87500120059 /* MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD61C10E9A87400120059 /* MachOSegmentCommandMO.m */; };
-		795FD61F10E9A87500120059 /* MachOSegmentSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD61E10E9A87500120059 /* MachOSegmentSectionMO.m */; };
-		795FD62610E9A87700120059 /* _MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD62510E9A87700120059 /* _MachOCommandMO.m */; };
-		795FD62810E9A87800120059 /* _MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD62710E9A87800120059 /* _MachOFileMO.m */; };
-		795FD62A10E9A87800120059 /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD62910E9A87800120059 /* _MachOHeaderMO.m */; };
-		795FD62C10E9A87900120059 /* _MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD62B10E9A87800120059 /* _MachOSegmentCommandMO.m */; };
-		795FD62E10E9A87900120059 /* _MachOSegmentSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 795FD62D10E9A87900120059 /* _MachOSegmentSectionMO.m */; };
 		799CBABD10E89875004D7ED6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799CBABC10E89875004D7ED6 /* WebKit.framework */; };
 		799CBAC410E89940004D7ED6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799CBAC210E89940004D7ED6 /* MainMenu.xib */; };
+		79E6D12510E9C1B9007BEF81 /* MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D12410E9C1B9007BEF81 /* MachOCommandMO.m */; };
+		79E6D12710E9C1B9007BEF81 /* MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D12610E9C1B9007BEF81 /* MachOFileMO.m */; };
+		79E6D12910E9C1B9007BEF81 /* MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D12810E9C1B9007BEF81 /* MachOHeaderMO.m */; };
+		79E6D12B10E9C1BA007BEF81 /* MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D12A10E9C1BA007BEF81 /* MachOSegmentCommandMO.m */; };
+		79E6D12D10E9C1BA007BEF81 /* MachOSegmentSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D12C10E9C1BA007BEF81 /* MachOSegmentSectionMO.m */; };
+		79E6D13410E9C1BC007BEF81 /* _MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D13310E9C1BC007BEF81 /* _MachOCommandMO.m */; };
+		79E6D13610E9C1BC007BEF81 /* _MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D13510E9C1BC007BEF81 /* _MachOFileMO.m */; };
+		79E6D13810E9C1BD007BEF81 /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D13710E9C1BC007BEF81 /* _MachOHeaderMO.m */; };
+		79E6D13A10E9C1BD007BEF81 /* _MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D13910E9C1BD007BEF81 /* _MachOSegmentCommandMO.m */; };
+		79E6D13C10E9C1BD007BEF81 /* _MachOSegmentSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D13B10E9C1BD007BEF81 /* _MachOSegmentSectionMO.m */; };
+		79E6D14D10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D14C10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m */; };
+		79E6D1DA10EAC3A7007BEF81 /* NSString+jr_stringWithUTF8StringmaxLengthTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D1D910EAC3A7007BEF81 /* NSString+jr_stringWithUTF8StringmaxLengthTest.m */; };
+		79E6D22B10EAC716007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D14C10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		8F0C5D830EADC1EE007FBAA3 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E6D1AA10EAC311007BEF81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E6D1A410EAC304007BEF81;
+			remoteInfo = "MagicHat Tests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -64,35 +77,48 @@
 		794A416110E8131400A8DE20 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
 		794A416310E8131900A8DE20 /* swap_headers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swap_headers.c; sourceTree = "<group>"; };
 		794A416510E8132200A8DE20 /* guess_short_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guess_short_name.c; sourceTree = "<group>"; };
-		795FD61610E9A87300120059 /* MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOCommandMO.m; sourceTree = "<group>"; };
-		795FD61810E9A87300120059 /* MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOFileMO.m; sourceTree = "<group>"; };
-		795FD61A10E9A87400120059 /* MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOHeaderMO.m; sourceTree = "<group>"; };
-		795FD61C10E9A87400120059 /* MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentCommandMO.m; sourceTree = "<group>"; };
-		795FD61E10E9A87500120059 /* MachOSegmentSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentSectionMO.m; sourceTree = "<group>"; };
-		795FD62010E9A87500120059 /* MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOCommandMO.h; sourceTree = "<group>"; };
-		795FD62110E9A87600120059 /* MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileMO.h; sourceTree = "<group>"; };
-		795FD62210E9A87600120059 /* MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOHeaderMO.h; sourceTree = "<group>"; };
-		795FD62310E9A87700120059 /* MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentCommandMO.h; sourceTree = "<group>"; };
-		795FD62410E9A87700120059 /* MachOSegmentSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentSectionMO.h; sourceTree = "<group>"; };
-		795FD62510E9A87700120059 /* _MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOCommandMO.m; sourceTree = "<group>"; };
-		795FD62710E9A87800120059 /* _MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOFileMO.m; sourceTree = "<group>"; };
-		795FD62910E9A87800120059 /* _MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOHeaderMO.m; sourceTree = "<group>"; };
-		795FD62B10E9A87800120059 /* _MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentCommandMO.m; sourceTree = "<group>"; };
-		795FD62D10E9A87900120059 /* _MachOSegmentSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentSectionMO.m; sourceTree = "<group>"; };
-		795FD62F10E9A87900120059 /* _MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOCommandMO.h; sourceTree = "<group>"; };
-		795FD63010E9A87A00120059 /* _MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOFileMO.h; sourceTree = "<group>"; };
-		795FD63110E9A87A00120059 /* _MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOHeaderMO.h; sourceTree = "<group>"; };
-		795FD63210E9A87A00120059 /* _MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentCommandMO.h; sourceTree = "<group>"; };
-		795FD63310E9A87A00120059 /* _MachOSegmentSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentSectionMO.h; sourceTree = "<group>"; };
 		799CBABC10E89875004D7ED6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		799CBAC310E89940004D7ED6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		799CBB1110E9768B004D7ED6 /* ASSIGN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSIGN.h; sourceTree = "<group>"; };
+		79E6D12410E9C1B9007BEF81 /* MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOCommandMO.m; sourceTree = "<group>"; };
+		79E6D12610E9C1B9007BEF81 /* MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOFileMO.m; sourceTree = "<group>"; };
+		79E6D12810E9C1B9007BEF81 /* MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOHeaderMO.m; sourceTree = "<group>"; };
+		79E6D12A10E9C1BA007BEF81 /* MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentCommandMO.m; sourceTree = "<group>"; };
+		79E6D12C10E9C1BA007BEF81 /* MachOSegmentSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentSectionMO.m; sourceTree = "<group>"; };
+		79E6D12E10E9C1BA007BEF81 /* MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOCommandMO.h; sourceTree = "<group>"; };
+		79E6D12F10E9C1BB007BEF81 /* MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileMO.h; sourceTree = "<group>"; };
+		79E6D13010E9C1BB007BEF81 /* MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOHeaderMO.h; sourceTree = "<group>"; };
+		79E6D13110E9C1BB007BEF81 /* MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentCommandMO.h; sourceTree = "<group>"; };
+		79E6D13210E9C1BB007BEF81 /* MachOSegmentSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentSectionMO.h; sourceTree = "<group>"; };
+		79E6D13310E9C1BC007BEF81 /* _MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOCommandMO.m; sourceTree = "<group>"; };
+		79E6D13510E9C1BC007BEF81 /* _MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOFileMO.m; sourceTree = "<group>"; };
+		79E6D13710E9C1BC007BEF81 /* _MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOHeaderMO.m; sourceTree = "<group>"; };
+		79E6D13910E9C1BD007BEF81 /* _MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentCommandMO.m; sourceTree = "<group>"; };
+		79E6D13B10E9C1BD007BEF81 /* _MachOSegmentSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentSectionMO.m; sourceTree = "<group>"; };
+		79E6D13D10E9C1BE007BEF81 /* _MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOCommandMO.h; sourceTree = "<group>"; };
+		79E6D13E10E9C1BE007BEF81 /* _MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOFileMO.h; sourceTree = "<group>"; };
+		79E6D13F10E9C1BE007BEF81 /* _MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOHeaderMO.h; sourceTree = "<group>"; };
+		79E6D14010E9C1BE007BEF81 /* _MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentCommandMO.h; sourceTree = "<group>"; };
+		79E6D14110E9C1BE007BEF81 /* _MachOSegmentSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentSectionMO.h; sourceTree = "<group>"; };
+		79E6D14B10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+jr_stringWithUTF8StringmaxLength.h"; sourceTree = "<group>"; };
+		79E6D14C10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+jr_stringWithUTF8StringmaxLength.m"; sourceTree = "<group>"; };
+		79E6D1A510EAC304007BEF81 /* MagicHat Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MagicHat Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E6D1A610EAC304007BEF81 /* MagicHat Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicHat Tests-Info.plist"; sourceTree = "<group>"; };
+		79E6D1D810EAC3A7007BEF81 /* NSString+jr_stringWithUTF8StringmaxLengthTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+jr_stringWithUTF8StringmaxLengthTest.h"; sourceTree = "<group>"; };
+		79E6D1D910EAC3A7007BEF81 /* NSString+jr_stringWithUTF8StringmaxLengthTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+jr_stringWithUTF8StringmaxLengthTest.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MagicHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		79E6D1A210EAC304007BEF81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,6 +135,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				79E6D14B10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.h */,
+				79E6D14C10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -137,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* MagicHat.app */,
+				79E6D1A510EAC304007BEF81 /* MagicHat Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,12 +174,14 @@
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
+				79E6D1D710EAC39C007BEF81 /* Tests */,
 				794A40E410E8102600A8DE20 /* Models */,
 				794A414C10E8128100A8DE20 /* cctools */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				79E6D1A610EAC304007BEF81 /* MagicHat Tests-Info.plist */,
 			);
 			name = MagicHat;
 			sourceTree = "<group>";
@@ -198,26 +229,26 @@
 		794A40E810E8104000A8DE20 /* MagicHat_DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				795FD61610E9A87300120059 /* MachOCommandMO.m */,
-				795FD61810E9A87300120059 /* MachOFileMO.m */,
-				795FD61A10E9A87400120059 /* MachOHeaderMO.m */,
-				795FD61C10E9A87400120059 /* MachOSegmentCommandMO.m */,
-				795FD61E10E9A87500120059 /* MachOSegmentSectionMO.m */,
-				795FD62010E9A87500120059 /* MachOCommandMO.h */,
-				795FD62110E9A87600120059 /* MachOFileMO.h */,
-				795FD62210E9A87600120059 /* MachOHeaderMO.h */,
-				795FD62310E9A87700120059 /* MachOSegmentCommandMO.h */,
-				795FD62410E9A87700120059 /* MachOSegmentSectionMO.h */,
-				795FD62510E9A87700120059 /* _MachOCommandMO.m */,
-				795FD62710E9A87800120059 /* _MachOFileMO.m */,
-				795FD62910E9A87800120059 /* _MachOHeaderMO.m */,
-				795FD62B10E9A87800120059 /* _MachOSegmentCommandMO.m */,
-				795FD62D10E9A87900120059 /* _MachOSegmentSectionMO.m */,
-				795FD62F10E9A87900120059 /* _MachOCommandMO.h */,
-				795FD63010E9A87A00120059 /* _MachOFileMO.h */,
-				795FD63110E9A87A00120059 /* _MachOHeaderMO.h */,
-				795FD63210E9A87A00120059 /* _MachOSegmentCommandMO.h */,
-				795FD63310E9A87A00120059 /* _MachOSegmentSectionMO.h */,
+				79E6D12410E9C1B9007BEF81 /* MachOCommandMO.m */,
+				79E6D12610E9C1B9007BEF81 /* MachOFileMO.m */,
+				79E6D12810E9C1B9007BEF81 /* MachOHeaderMO.m */,
+				79E6D12A10E9C1BA007BEF81 /* MachOSegmentCommandMO.m */,
+				79E6D12C10E9C1BA007BEF81 /* MachOSegmentSectionMO.m */,
+				79E6D12E10E9C1BA007BEF81 /* MachOCommandMO.h */,
+				79E6D12F10E9C1BB007BEF81 /* MachOFileMO.h */,
+				79E6D13010E9C1BB007BEF81 /* MachOHeaderMO.h */,
+				79E6D13110E9C1BB007BEF81 /* MachOSegmentCommandMO.h */,
+				79E6D13210E9C1BB007BEF81 /* MachOSegmentSectionMO.h */,
+				79E6D13310E9C1BC007BEF81 /* _MachOCommandMO.m */,
+				79E6D13510E9C1BC007BEF81 /* _MachOFileMO.m */,
+				79E6D13710E9C1BC007BEF81 /* _MachOHeaderMO.m */,
+				79E6D13910E9C1BD007BEF81 /* _MachOSegmentCommandMO.m */,
+				79E6D13B10E9C1BD007BEF81 /* _MachOSegmentSectionMO.m */,
+				79E6D13D10E9C1BE007BEF81 /* _MachOCommandMO.h */,
+				79E6D13E10E9C1BE007BEF81 /* _MachOFileMO.h */,
+				79E6D13F10E9C1BE007BEF81 /* _MachOHeaderMO.h */,
+				79E6D14010E9C1BE007BEF81 /* _MachOSegmentCommandMO.h */,
+				79E6D14110E9C1BE007BEF81 /* _MachOSegmentSectionMO.h */,
 			);
 			path = MagicHat_DataModel;
 			sourceTree = "<group>";
@@ -250,9 +281,36 @@
 			path = libstuff;
 			sourceTree = "<group>";
 		};
+		79E6D1D710EAC39C007BEF81 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				79E6D1D810EAC3A7007BEF81 /* NSString+jr_stringWithUTF8StringmaxLengthTest.h */,
+				79E6D1D910EAC3A7007BEF81 /* NSString+jr_stringWithUTF8StringmaxLengthTest.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		79E6D1A410EAC304007BEF81 /* MagicHat Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E6D1A910EAC305007BEF81 /* Build configuration list for PBXNativeTarget "MagicHat Tests" */;
+			buildPhases = (
+				79E6D1A010EAC304007BEF81 /* Resources */,
+				79E6D1A110EAC304007BEF81 /* Sources */,
+				79E6D1A210EAC304007BEF81 /* Frameworks */,
+				79E6D1A310EAC304007BEF81 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MagicHat Tests";
+			productName = "MagicHat Tests";
+			productReference = 79E6D1A510EAC304007BEF81 /* MagicHat Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D1107260486CEB800E47090 /* MagicHat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MagicHat" */;
@@ -264,6 +322,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				79E6D1AB10EAC311007BEF81 /* PBXTargetDependency */,
 			);
 			name = MagicHat;
 			productInstallPath = "$(HOME)/Applications";
@@ -284,11 +343,19 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* MagicHat */,
+				79E6D1A410EAC304007BEF81 /* MagicHat Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		79E6D1A010EAC304007BEF81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,7 +370,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79E6D1A310EAC304007BEF81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		79E6D1A110EAC304007BEF81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E6D1DA10EAC3A7007BEF81 /* NSString+jr_stringWithUTF8StringmaxLengthTest.m in Sources */,
+				79E6D22B10EAC716007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,20 +414,29 @@
 				794A416210E8131400A8DE20 /* print.c in Sources */,
 				794A416410E8131900A8DE20 /* swap_headers.c in Sources */,
 				794A416610E8132200A8DE20 /* guess_short_name.c in Sources */,
-				795FD61710E9A87300120059 /* MachOCommandMO.m in Sources */,
-				795FD61910E9A87400120059 /* MachOFileMO.m in Sources */,
-				795FD61B10E9A87400120059 /* MachOHeaderMO.m in Sources */,
-				795FD61D10E9A87500120059 /* MachOSegmentCommandMO.m in Sources */,
-				795FD61F10E9A87500120059 /* MachOSegmentSectionMO.m in Sources */,
-				795FD62610E9A87700120059 /* _MachOCommandMO.m in Sources */,
-				795FD62810E9A87800120059 /* _MachOFileMO.m in Sources */,
-				795FD62A10E9A87800120059 /* _MachOHeaderMO.m in Sources */,
-				795FD62C10E9A87900120059 /* _MachOSegmentCommandMO.m in Sources */,
-				795FD62E10E9A87900120059 /* _MachOSegmentSectionMO.m in Sources */,
+				79E6D12510E9C1B9007BEF81 /* MachOCommandMO.m in Sources */,
+				79E6D12710E9C1B9007BEF81 /* MachOFileMO.m in Sources */,
+				79E6D12910E9C1B9007BEF81 /* MachOHeaderMO.m in Sources */,
+				79E6D12B10E9C1BA007BEF81 /* MachOSegmentCommandMO.m in Sources */,
+				79E6D12D10E9C1BA007BEF81 /* MachOSegmentSectionMO.m in Sources */,
+				79E6D13410E9C1BC007BEF81 /* _MachOCommandMO.m in Sources */,
+				79E6D13610E9C1BC007BEF81 /* _MachOFileMO.m in Sources */,
+				79E6D13810E9C1BD007BEF81 /* _MachOHeaderMO.m in Sources */,
+				79E6D13A10E9C1BD007BEF81 /* _MachOSegmentCommandMO.m in Sources */,
+				79E6D13C10E9C1BD007BEF81 /* _MachOSegmentSectionMO.m in Sources */,
+				79E6D14D10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E6D1AB10EAC311007BEF81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E6D1A410EAC304007BEF81 /* MagicHat Tests */;
+			targetProxy = 79E6D1AA10EAC311007BEF81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -357,6 +458,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		79E6D1A710EAC305007BEF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "MagicHat Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "MagicHat Tests";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		79E6D1A810EAC305007BEF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "MagicHat Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "MagicHat Tests";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,6 +573,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		79E6D1A910EAC305007BEF81 /* Build configuration list for PBXNativeTarget "MagicHat Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E6D1A710EAC305007BEF81 /* Debug */,
+				79E6D1A810EAC305007BEF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MagicHat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
