@@ -4,6 +4,7 @@
 #include "otool/ofile_print.h"
 #import "MachOHeaderMO.h"
 #import "MachOCommandMO.h"
+#import "ASSIGN.h"
 
 char *progname = "my_progname";
 
@@ -35,8 +36,6 @@ void ofile_processor(struct ofile *ofile, char *arch_name, void *cookie) {
     return YES;
 }
 
-#define ASSIGN(RECEIVER, KEY, SOURCE) RECEIVER.KEY = [NSNumber numberWithUnsignedInt:(SOURCE)->KEY]
-
 - (void)processOFile:(struct ofile*)ofile archName:(char*)arch_name {
     if(ofile->mh == NULL && ofile->mh64 == NULL)
 	    return;
@@ -48,19 +47,19 @@ void ofile_processor(struct ofile *ofile, char *arch_name, void *cookie) {
     assert(ofile->mh || ofile->mh64);
     uint32_t ncmds, sizeofcmds;
     if (ofile->mh) {
-        ASSIGN(header, magic, ofile->mh);
-        ASSIGN(header, cputype, ofile->mh);
-        ASSIGN(header, cpusubtype, ofile->mh);
-        ASSIGN(header, filetype, ofile->mh);
-        ASSIGN(header, flags, ofile->mh);
+        ASSIGN_ATTR(header, magic, ofile->mh);
+        ASSIGN_ATTR(header, cputype, ofile->mh);
+        ASSIGN_ATTR(header, cpusubtype, ofile->mh);
+        ASSIGN_ATTR(header, filetype, ofile->mh);
+        ASSIGN_ATTR(header, flags, ofile->mh);
         ncmds = ofile->mh->ncmds;
         sizeofcmds = ofile->mh->sizeofcmds;
     } else {
-        ASSIGN(header, magic, ofile->mh64);
-        ASSIGN(header, cputype, ofile->mh64);
-        ASSIGN(header, cpusubtype, ofile->mh64);
-        ASSIGN(header, filetype, ofile->mh64);
-        ASSIGN(header, flags, ofile->mh64);
+        ASSIGN_ATTR(header, magic, ofile->mh64);
+        ASSIGN_ATTR(header, cputype, ofile->mh64);
+        ASSIGN_ATTR(header, cpusubtype, ofile->mh64);
+        ASSIGN_ATTR(header, filetype, ofile->mh64);
+        ASSIGN_ATTR(header, flags, ofile->mh64);
         ncmds = ofile->mh64->ncmds;
         sizeofcmds = ofile->mh64->sizeofcmds;
     }
