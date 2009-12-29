@@ -24,6 +24,7 @@
 
 @property (nonatomic, retain) NSNumber *magic;
 
+@property int magicValue;
 - (int)magicValue;
 - (void)setMagicValue:(int)value_;
 
@@ -33,6 +34,7 @@
 
 @property (nonatomic, retain) NSNumber *filetype;
 
+@property int filetypeValue;
 - (int)filetypeValue;
 - (void)setFiletypeValue:(int)value_;
 
@@ -42,6 +44,7 @@
 
 @property (nonatomic, retain) NSNumber *cpusubtype;
 
+@property int cpusubtypeValue;
 - (int)cpusubtypeValue;
 - (void)setCpusubtypeValue:(int)value_;
 
@@ -51,6 +54,7 @@
 
 @property (nonatomic, retain) NSNumber *cputype;
 
+@property int cputypeValue;
 - (int)cputypeValue;
 - (void)setCputypeValue:(int)value_;
 
@@ -60,6 +64,7 @@
 
 @property (nonatomic, retain) NSNumber *flags;
 
+@property int flagsValue;
 - (int)flagsValue;
 - (void)setFlagsValue:(int)value_;
 

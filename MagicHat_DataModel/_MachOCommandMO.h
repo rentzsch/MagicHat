@@ -18,6 +18,7 @@
 
 @property (nonatomic, retain) NSNumber *cmd;
 
+@property int cmdValue;
 - (int)cmdValue;
 - (void)setCmdValue:(int)value_;
 
@@ -33,6 +34,7 @@
 
 @property (nonatomic, retain) NSNumber *cmdsize;
 
+@property int cmdsizeValue;
 - (int)cmdsizeValue;
 - (void)setCmdsizeValue:(int)value_;
 

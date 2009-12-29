@@ -1,4 +1,5 @@
 #import "_MachOCommandMO.h"
+#import <mach-o/loader.h>
 
 @interface MachOCommandMO : _MachOCommandMO {}
 

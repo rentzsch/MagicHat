@@ -1,6 +1,6 @@
 #import "MachOCommandMO.h"
-#import <mach-o/loader.h>
 #import "stuff/bytesex.h"
+#import "MachOSegmentCommandMO.h"
 
 typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_byte_sex);
 
@@ -21,6 +21,7 @@ typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_
         case LC_SEGMENT:
             command_name = @"LC_SEGMENT";
             command_swapper = (load_command_swap_proc)swap_segment_command;
+            command_class = [MachOSegmentCommandMO class];
             break;
         case LC_SYMTAB:
             command_name = @"LC_SYMTAB";
@@ -117,6 +118,7 @@ typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_
         case LC_SEGMENT_64:
             command_name = @"LC_SEGMENT_64";
             command_swapper = (load_command_swap_proc)swap_segment_command_64;
+            command_class = [MachOSegmentCommandMO class];
             break;
         case LC_ROUTINES_64:
             command_name = @"LC_ROUTINES_64";

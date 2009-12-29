@@ -20,7 +20,43 @@
 
 
 
+@dynamic filesize;
+
+
+
+- (long long)filesizeValue {
+	NSNumber *result = [self filesize];
+	return result ? [result longLongValue] : 0;
+}
+
+- (void)setFilesizeValue:(long long)value_ {
+	[self setFilesize:[NSNumber numberWithLongLong:value_]];
+}
+
+
+
+
+
+
 @dynamic name;
+
+
+
+
+
+
+@dynamic fileoff;
+
+
+
+- (long long)fileoffValue {
+	NSNumber *result = [self fileoff];
+	return result ? [result longLongValue] : 0;
+}
+
+- (void)setFileoffValue:(long long)value_ {
+	[self setFileoff:[NSNumber numberWithLongLong:value_]];
+}
 
 
 
