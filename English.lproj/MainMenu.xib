@@ -11,8 +11,8 @@
 			<string key="com.apple.WebKitIBPlugin">740</string>
 		</dictionary>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="29"/>
 			<integer value="372"/>
+			<integer value="29"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -743,7 +743,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 426}, {466, 324}}</string>
+				<string key="NSWindowRect">{{32, 710}, {703, 828}}</string>
 				<int key="NSWTFlags">1946157056</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -773,7 +773,7 @@
 								<string>public.url</string>
 								<string>public.url-name</string>
 							</set>
-							<string key="NSFrame">{{20, 20}, {426, 284}}</string>
+							<string key="NSFrame">{{20, 20}, {663, 788}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView"/>
 							<string key="FrameName"/>
@@ -790,10 +790,10 @@
 							<bool key="AllowsUndo">YES</bool>
 						</object>
 					</array>
-					<string key="NSFrameSize">{466, 324}</string>
+					<string key="NSFrameSize">{703, 828}</string>
 					<reference key="NSSuperview"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
+				<string key="NSScreenRect">{{0, 0}, {2560, 1578}}</string>
 				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
 			</object>
 			<object class="NSCustomObject" id="422715836">
@@ -1870,9 +1870,9 @@
 				<integer value="1" key="351.ImportedFromIB2"/>
 				<string key="354.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="354.ImportedFromIB2"/>
-				<string key="371.IBEditorWindowLastContentRect">{{164, 124}, {466, 324}}</string>
+				<string key="371.IBEditorWindowLastContentRect">{{32, 710}, {703, 828}}</string>
 				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBWindowTemplateEditedContentRect">{{164, 124}, {466, 324}}</string>
+				<string key="371.IBWindowTemplateEditedContentRect">{{32, 710}, {703, 828}}</string>
 				<integer value="1" key="371.NSWindowTemplate.visibleAtLaunch"/>
 				<string key="371.editorWindowContentRectSynchronizationRect">{{33, 99}, {480, 360}}</string>
 				<string key="372.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>

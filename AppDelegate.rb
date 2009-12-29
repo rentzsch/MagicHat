@@ -18,6 +18,22 @@ class AppDelegate
     unless machoFile.setFileURL(NSURL.fileURLWithPath('/Applications/Stickies.app/Contents/MacOS/Stickies'), error:error)
         NSApp.presentError(error[0])
     end
+    
+    output = '';
+    machoFile.headers.allObjects.each do |header|
+        output += "header: #{header.archName}\n"
+        header.commands.allObjects.each do |command|
+            output += "\tcommand: #{command.name}\n"
+            if command.kind_of?(MachOSegmentCommandMO)
+                output += "\t\tsegment: #{command.segname}\n"
+                command.sections.allObjects.each do |section|
+                    output += "\t\t\tsection: #{section.segname} #{section.sectname}\n"
+                end
+            end
+        end
+    end
+    puts output
+    
     NSApp.terminate(nil)
   end
 
