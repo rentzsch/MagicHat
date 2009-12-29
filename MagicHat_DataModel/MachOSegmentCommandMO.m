@@ -1,9 +1,10 @@
 #import "MachOSegmentCommandMO.h"
 #import "ASSIGN.h"
+#import "stuff/bytesex.h"
 
 @implementation MachOSegmentCommandMO
 
-- (void)setLoadCommand:(struct load_command*)swappedLoadCommand {
+- (void)setLoadCommand:(struct load_command*)swappedLoadCommand swap:(BOOL)swap {
     [super setLoadCommand:swappedLoadCommand];
     switch (swappedLoadCommand->cmd) {
         case LC_SEGMENT: {
@@ -23,7 +24,13 @@
             ASSIGN_ATTR(self, nsects, segmentCommand);
             ASSIGN_ATTR(self, flags, segmentCommand);
             
-            
+            struct section *sections = (struct section*)(((char*)segmentCommand)+sizeof(struct segment_command));
+            if (swap) {
+                swap_section(sections, segmentCommand->nsects, get_host_byte_sex());
+            }
+            for(uint32_t sectionIndex = 0; sectionIndex < segmentCommand->nsects; sectionIndex++) {
+                
+            }
         }   break;
         case LC_SEGMENT_64: {
             struct segment_command_64 *segmentCommand = (struct segment_command_64*)swappedLoadCommand;

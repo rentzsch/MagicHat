@@ -177,7 +177,7 @@ typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_
     }
     
     [command setName:command_name];
-    [command setLoadCommand:swappedLoadCommand];
+    [command setLoadCommand:swappedLoadCommand swap:swap];
     
     if (swap) {
         free(swappedLoadCommand);
@@ -185,7 +185,7 @@ typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_
     return command;
 }
 
-- (void)setLoadCommand:(struct load_command*)swappedLoadCommand {
+- (void)setLoadCommand:(struct load_command*)swappedLoadCommand swap:(BOOL)swap {
     [self setCmdValue:swappedLoadCommand->cmd];
     [self setCmdsizeValue:swappedLoadCommand->cmdsize];
 }

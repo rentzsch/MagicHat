@@ -63,47 +63,6 @@
 
 
 
-@dynamic segments;
-
-	
-
-- (void)addSegments:(NSSet*)value_ {
-	[self willChangeValueForKey:@"segments" withSetMutation:NSKeyValueUnionSetMutation usingObjects:value_];
-	[[self primitiveValueForKey:@"segments"] unionSet:value_];
-	[self didChangeValueForKey:@"segments" withSetMutation:NSKeyValueUnionSetMutation usingObjects:value_];
-}
-
--(void)removeSegments:(NSSet*)value_ {
-	[self willChangeValueForKey:@"segments" withSetMutation:NSKeyValueMinusSetMutation usingObjects:value_];
-	[[self primitiveValueForKey:@"segments"] minusSet:value_];
-	[self didChangeValueForKey:@"segments" withSetMutation:NSKeyValueMinusSetMutation usingObjects:value_];
-}
-	
-- (void)addSegmentsObject:(MachOSegmentMO*)value_ {
-	NSSet *changedObjects = [[NSSet alloc] initWithObjects:&value_ count:1];
-	[self willChangeValueForKey:@"segments" withSetMutation:NSKeyValueUnionSetMutation usingObjects:changedObjects];
-	[[self primitiveValueForKey:@"segments"] addObject:value_];
-	[self didChangeValueForKey:@"segments" withSetMutation:NSKeyValueUnionSetMutation usingObjects:changedObjects];
-	[changedObjects release];
-}
-
-- (void)removeSegmentsObject:(MachOSegmentMO*)value_ {
-	NSSet *changedObjects = [[NSSet alloc] initWithObjects:&value_ count:1];
-	[self willChangeValueForKey:@"segments" withSetMutation:NSKeyValueMinusSetMutation usingObjects:changedObjects];
-	[[self primitiveValueForKey:@"segments"] removeObject:value_];
-	[self didChangeValueForKey:@"segments" withSetMutation:NSKeyValueMinusSetMutation usingObjects:changedObjects];
-	[changedObjects release];
-}
-
-- (NSMutableSet*)segmentsSet {
-	[self willAccessValueForKey:@"segments"];
-	NSMutableSet *result = [self mutableSetValueForKey:@"segments"];
-	[self didAccessValueForKey:@"segments"];
-	return result;
-}
-
-	
-
 @dynamic header;
 
 	

@@ -25,18 +25,14 @@
 		794A416610E8132200A8DE20 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416510E8132200A8DE20 /* guess_short_name.c */; };
 		799CBABD10E89875004D7ED6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799CBABC10E89875004D7ED6 /* WebKit.framework */; };
 		799CBAC410E89940004D7ED6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799CBAC210E89940004D7ED6 /* MainMenu.xib */; };
-		799CBBE510E98BE0004D7ED6 /* MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBE410E98BE0004D7ED6 /* MachOCommandMO.m */; };
-		799CBBE710E98BE0004D7ED6 /* MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBE610E98BE0004D7ED6 /* MachOFileMO.m */; };
-		799CBBE910E98BE0004D7ED6 /* MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBE810E98BE0004D7ED6 /* MachOHeaderMO.m */; };
-		799CBBEB10E98BE1004D7ED6 /* MachOSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBEA10E98BE0004D7ED6 /* MachOSectionMO.m */; };
-		799CBBED10E98BE1004D7ED6 /* MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBEC10E98BE1004D7ED6 /* MachOSegmentCommandMO.m */; };
-		799CBBEF10E98BE1004D7ED6 /* MachOSegmentMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBEE10E98BE1004D7ED6 /* MachOSegmentMO.m */; };
-		799CBBF710E98BE3004D7ED6 /* _MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBF610E98BE3004D7ED6 /* _MachOCommandMO.m */; };
-		799CBBF910E98BE3004D7ED6 /* _MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBF810E98BE3004D7ED6 /* _MachOFileMO.m */; };
-		799CBBFB10E98BE4004D7ED6 /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBFA10E98BE3004D7ED6 /* _MachOHeaderMO.m */; };
-		799CBBFD10E98BE4004D7ED6 /* _MachOSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBFC10E98BE4004D7ED6 /* _MachOSectionMO.m */; };
-		799CBBFF10E98BE4004D7ED6 /* _MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBBFE10E98BE4004D7ED6 /* _MachOSegmentCommandMO.m */; };
-		799CBC0110E98BE5004D7ED6 /* _MachOSegmentMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC0010E98BE4004D7ED6 /* _MachOSegmentMO.m */; };
+		799CBC6710E99E21004D7ED6 /* MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC6610E99E21004D7ED6 /* MachOCommandMO.m */; };
+		799CBC6910E99E21004D7ED6 /* MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC6810E99E21004D7ED6 /* MachOFileMO.m */; };
+		799CBC6B10E99E22004D7ED6 /* MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC6A10E99E22004D7ED6 /* MachOHeaderMO.m */; };
+		799CBC6D10E99E22004D7ED6 /* MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC6C10E99E22004D7ED6 /* MachOSegmentCommandMO.m */; };
+		799CBC7310E99E24004D7ED6 /* _MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC7210E99E24004D7ED6 /* _MachOCommandMO.m */; };
+		799CBC7510E99E24004D7ED6 /* _MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC7410E99E24004D7ED6 /* _MachOFileMO.m */; };
+		799CBC7710E99E24004D7ED6 /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC7610E99E24004D7ED6 /* _MachOHeaderMO.m */; };
+		799CBC7910E99E25004D7ED6 /* _MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CBC7810E99E25004D7ED6 /* _MachOSegmentCommandMO.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -69,30 +65,22 @@
 		799CBABC10E89875004D7ED6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		799CBAC310E89940004D7ED6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		799CBB1110E9768B004D7ED6 /* ASSIGN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSIGN.h; sourceTree = "<group>"; };
-		799CBBDE10E98BDF004D7ED6 /* MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOCommandMO.h; sourceTree = "<group>"; };
-		799CBBDF10E98BDF004D7ED6 /* MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileMO.h; sourceTree = "<group>"; };
-		799CBBE010E98BDF004D7ED6 /* MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOHeaderMO.h; sourceTree = "<group>"; };
-		799CBBE110E98BDF004D7ED6 /* MachOSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSectionMO.h; sourceTree = "<group>"; };
-		799CBBE210E98BDF004D7ED6 /* MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentCommandMO.h; sourceTree = "<group>"; };
-		799CBBE310E98BDF004D7ED6 /* MachOSegmentMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentMO.h; sourceTree = "<group>"; };
-		799CBBE410E98BE0004D7ED6 /* MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOCommandMO.m; sourceTree = "<group>"; };
-		799CBBE610E98BE0004D7ED6 /* MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOFileMO.m; sourceTree = "<group>"; };
-		799CBBE810E98BE0004D7ED6 /* MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOHeaderMO.m; sourceTree = "<group>"; };
-		799CBBEA10E98BE0004D7ED6 /* MachOSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSectionMO.m; sourceTree = "<group>"; };
-		799CBBEC10E98BE1004D7ED6 /* MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentCommandMO.m; sourceTree = "<group>"; };
-		799CBBEE10E98BE1004D7ED6 /* MachOSegmentMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentMO.m; sourceTree = "<group>"; };
-		799CBBF010E98BE1004D7ED6 /* _MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOCommandMO.h; sourceTree = "<group>"; };
-		799CBBF110E98BE2004D7ED6 /* _MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOFileMO.h; sourceTree = "<group>"; };
-		799CBBF210E98BE2004D7ED6 /* _MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOHeaderMO.h; sourceTree = "<group>"; };
-		799CBBF310E98BE2004D7ED6 /* _MachOSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSectionMO.h; sourceTree = "<group>"; };
-		799CBBF410E98BE2004D7ED6 /* _MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentCommandMO.h; sourceTree = "<group>"; };
-		799CBBF510E98BE3004D7ED6 /* _MachOSegmentMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentMO.h; sourceTree = "<group>"; };
-		799CBBF610E98BE3004D7ED6 /* _MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOCommandMO.m; sourceTree = "<group>"; };
-		799CBBF810E98BE3004D7ED6 /* _MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOFileMO.m; sourceTree = "<group>"; };
-		799CBBFA10E98BE3004D7ED6 /* _MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOHeaderMO.m; sourceTree = "<group>"; };
-		799CBBFC10E98BE4004D7ED6 /* _MachOSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSectionMO.m; sourceTree = "<group>"; };
-		799CBBFE10E98BE4004D7ED6 /* _MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentCommandMO.m; sourceTree = "<group>"; };
-		799CBC0010E98BE4004D7ED6 /* _MachOSegmentMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentMO.m; sourceTree = "<group>"; };
+		799CBC6210E99E1F004D7ED6 /* MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOCommandMO.h; sourceTree = "<group>"; };
+		799CBC6310E99E1F004D7ED6 /* MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileMO.h; sourceTree = "<group>"; };
+		799CBC6410E99E1F004D7ED6 /* MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOHeaderMO.h; sourceTree = "<group>"; };
+		799CBC6510E99E1F004D7ED6 /* MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentCommandMO.h; sourceTree = "<group>"; };
+		799CBC6610E99E21004D7ED6 /* MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOCommandMO.m; sourceTree = "<group>"; };
+		799CBC6810E99E21004D7ED6 /* MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOFileMO.m; sourceTree = "<group>"; };
+		799CBC6A10E99E22004D7ED6 /* MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOHeaderMO.m; sourceTree = "<group>"; };
+		799CBC6C10E99E22004D7ED6 /* MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentCommandMO.m; sourceTree = "<group>"; };
+		799CBC6E10E99E22004D7ED6 /* _MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOCommandMO.h; sourceTree = "<group>"; };
+		799CBC6F10E99E23004D7ED6 /* _MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOFileMO.h; sourceTree = "<group>"; };
+		799CBC7010E99E23004D7ED6 /* _MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOHeaderMO.h; sourceTree = "<group>"; };
+		799CBC7110E99E23004D7ED6 /* _MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentCommandMO.h; sourceTree = "<group>"; };
+		799CBC7210E99E24004D7ED6 /* _MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOCommandMO.m; sourceTree = "<group>"; };
+		799CBC7410E99E24004D7ED6 /* _MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOFileMO.m; sourceTree = "<group>"; };
+		799CBC7610E99E24004D7ED6 /* _MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOHeaderMO.m; sourceTree = "<group>"; };
+		799CBC7810E99E25004D7ED6 /* _MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentCommandMO.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MagicHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0C5D820EADC1EE007FBAA3 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
@@ -204,30 +192,22 @@
 		794A40E810E8104000A8DE20 /* MagicHat_DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				799CBBDE10E98BDF004D7ED6 /* MachOCommandMO.h */,
-				799CBBDF10E98BDF004D7ED6 /* MachOFileMO.h */,
-				799CBBE010E98BDF004D7ED6 /* MachOHeaderMO.h */,
-				799CBBE110E98BDF004D7ED6 /* MachOSectionMO.h */,
-				799CBBE210E98BDF004D7ED6 /* MachOSegmentCommandMO.h */,
-				799CBBE310E98BDF004D7ED6 /* MachOSegmentMO.h */,
-				799CBBE410E98BE0004D7ED6 /* MachOCommandMO.m */,
-				799CBBE610E98BE0004D7ED6 /* MachOFileMO.m */,
-				799CBBE810E98BE0004D7ED6 /* MachOHeaderMO.m */,
-				799CBBEA10E98BE0004D7ED6 /* MachOSectionMO.m */,
-				799CBBEC10E98BE1004D7ED6 /* MachOSegmentCommandMO.m */,
-				799CBBEE10E98BE1004D7ED6 /* MachOSegmentMO.m */,
-				799CBBF010E98BE1004D7ED6 /* _MachOCommandMO.h */,
-				799CBBF110E98BE2004D7ED6 /* _MachOFileMO.h */,
-				799CBBF210E98BE2004D7ED6 /* _MachOHeaderMO.h */,
-				799CBBF310E98BE2004D7ED6 /* _MachOSectionMO.h */,
-				799CBBF410E98BE2004D7ED6 /* _MachOSegmentCommandMO.h */,
-				799CBBF510E98BE3004D7ED6 /* _MachOSegmentMO.h */,
-				799CBBF610E98BE3004D7ED6 /* _MachOCommandMO.m */,
-				799CBBF810E98BE3004D7ED6 /* _MachOFileMO.m */,
-				799CBBFA10E98BE3004D7ED6 /* _MachOHeaderMO.m */,
-				799CBBFC10E98BE4004D7ED6 /* _MachOSectionMO.m */,
-				799CBBFE10E98BE4004D7ED6 /* _MachOSegmentCommandMO.m */,
-				799CBC0010E98BE4004D7ED6 /* _MachOSegmentMO.m */,
+				799CBC6210E99E1F004D7ED6 /* MachOCommandMO.h */,
+				799CBC6310E99E1F004D7ED6 /* MachOFileMO.h */,
+				799CBC6410E99E1F004D7ED6 /* MachOHeaderMO.h */,
+				799CBC6510E99E1F004D7ED6 /* MachOSegmentCommandMO.h */,
+				799CBC6610E99E21004D7ED6 /* MachOCommandMO.m */,
+				799CBC6810E99E21004D7ED6 /* MachOFileMO.m */,
+				799CBC6A10E99E22004D7ED6 /* MachOHeaderMO.m */,
+				799CBC6C10E99E22004D7ED6 /* MachOSegmentCommandMO.m */,
+				799CBC6E10E99E22004D7ED6 /* _MachOCommandMO.h */,
+				799CBC6F10E99E23004D7ED6 /* _MachOFileMO.h */,
+				799CBC7010E99E23004D7ED6 /* _MachOHeaderMO.h */,
+				799CBC7110E99E23004D7ED6 /* _MachOSegmentCommandMO.h */,
+				799CBC7210E99E24004D7ED6 /* _MachOCommandMO.m */,
+				799CBC7410E99E24004D7ED6 /* _MachOFileMO.m */,
+				799CBC7610E99E24004D7ED6 /* _MachOHeaderMO.m */,
+				799CBC7810E99E25004D7ED6 /* _MachOSegmentCommandMO.m */,
 			);
 			path = MagicHat_DataModel;
 			sourceTree = "<group>";
@@ -332,18 +312,14 @@
 				794A416210E8131400A8DE20 /* print.c in Sources */,
 				794A416410E8131900A8DE20 /* swap_headers.c in Sources */,
 				794A416610E8132200A8DE20 /* guess_short_name.c in Sources */,
-				799CBBE510E98BE0004D7ED6 /* MachOCommandMO.m in Sources */,
-				799CBBE710E98BE0004D7ED6 /* MachOFileMO.m in Sources */,
-				799CBBE910E98BE0004D7ED6 /* MachOHeaderMO.m in Sources */,
-				799CBBEB10E98BE1004D7ED6 /* MachOSectionMO.m in Sources */,
-				799CBBED10E98BE1004D7ED6 /* MachOSegmentCommandMO.m in Sources */,
-				799CBBEF10E98BE1004D7ED6 /* MachOSegmentMO.m in Sources */,
-				799CBBF710E98BE3004D7ED6 /* _MachOCommandMO.m in Sources */,
-				799CBBF910E98BE3004D7ED6 /* _MachOFileMO.m in Sources */,
-				799CBBFB10E98BE4004D7ED6 /* _MachOHeaderMO.m in Sources */,
-				799CBBFD10E98BE4004D7ED6 /* _MachOSectionMO.m in Sources */,
-				799CBBFF10E98BE4004D7ED6 /* _MachOSegmentCommandMO.m in Sources */,
-				799CBC0110E98BE5004D7ED6 /* _MachOSegmentMO.m in Sources */,
+				799CBC6710E99E21004D7ED6 /* MachOCommandMO.m in Sources */,
+				799CBC6910E99E21004D7ED6 /* MachOFileMO.m in Sources */,
+				799CBC6B10E99E22004D7ED6 /* MachOHeaderMO.m in Sources */,
+				799CBC6D10E99E22004D7ED6 /* MachOSegmentCommandMO.m in Sources */,
+				799CBC7310E99E24004D7ED6 /* _MachOCommandMO.m in Sources */,
+				799CBC7510E99E24004D7ED6 /* _MachOFileMO.m in Sources */,
+				799CBC7710E99E24004D7ED6 /* _MachOHeaderMO.m in Sources */,
+				799CBC7910E99E25004D7ED6 /* _MachOSegmentCommandMO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
