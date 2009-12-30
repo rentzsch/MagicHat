@@ -19,14 +19,17 @@ class AppDelegate
     end
 
     output = '';
-    machoFile.headers.allObjects.each do |header|
-        output += "header: #{header.archName}\n"
-        header.commands.allObjects.each do |command|
-            output += "\tcommand: #{command.name}\n"
+    headers = machoFile.headers.allObjects.sortedArrayUsingDescriptors([NSSortDescriptor.sortDescriptorWithKey('offset', ascending:true)])
+    headers.each do |header|
+        output += "header: #{header.archName} offset:#{header.offset}\n"
+        commands = header.commands.allObjects.sortedArrayUsingDescriptors([NSSortDescriptor.sortDescriptorWithKey('cmdoffset', ascending:true)])
+        commands.each do |command|
+            output += "\tcommand: #{command.name} offset:#{command.cmdoffset} cmdsize:#{command.cmdsize} (0x#{command.cmdsize.to_s(16)})\n"
             if command.kind_of?(MachOSegmentCommandMO)
-                output += "\t\tsegment: #{command.segname}\n"
-                command.sections.allObjects.each do |section|
-                    output += "\t\t\tsection: #{section.sectname}\n"
+                output += "\t\tsegment: #{command.segname} fileoff:#{command.fileoff} (0x#{command.fileoff.to_s(16)}) vmaddr:0x#{command.vmaddr} (0x#{command.vmaddr.to_s(16)}) filesize:#{command.filesize} (0x#{command.filesize.to_s(16)})\n"
+                sections = command.sections.allObjects.sortedArrayUsingDescriptors([NSSortDescriptor.sortDescriptorWithKey('offset', ascending:true)])
+                sections.each do |section|
+                    output += "\t\t\tsection: #{section.sectname} offset:#{header.offset+command.fileoff+section.offset} size:#{section.size}\n"
                 end
             end
         end

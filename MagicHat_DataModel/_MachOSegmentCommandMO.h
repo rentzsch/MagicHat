@@ -15,12 +15,6 @@
 
 
 
-@property (nonatomic, retain) NSString *segname;
-
-//- (BOOL)validateSegname:(id*)value_ error:(NSError**)error_;
-
-
-
 @property (nonatomic, retain) NSNumber *fileoff;
 
 @property long long fileoffValue;
@@ -28,6 +22,12 @@
 - (void)setFileoffValue:(long long)value_;
 
 //- (BOOL)validateFileoff:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSString *segname;
+
+//- (BOOL)validateSegname:(id*)value_ error:(NSError**)error_;
 
 
 

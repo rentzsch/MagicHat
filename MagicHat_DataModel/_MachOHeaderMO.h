@@ -16,6 +16,16 @@
 
 
 
+@property (nonatomic, retain) NSNumber *size;
+
+@property long long sizeValue;
+- (long long)sizeValue;
+- (void)setSizeValue:(long long)value_;
+
+//- (BOOL)validateSize:(id*)value_ error:(NSError**)error_;
+
+
+
 @property (nonatomic, retain) NSString *archName;
 
 //- (BOOL)validateArchName:(id*)value_ error:(NSError**)error_;
@@ -49,6 +59,16 @@
 - (void)setCpusubtypeValue:(int)value_;
 
 //- (BOOL)validateCpusubtype:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSNumber *offset;
+
+@property long long offsetValue;
+- (long long)offsetValue;
+- (void)setOffsetValue:(long long)value_;
+
+//- (BOOL)validateOffset:(id*)value_ error:(NSError**)error_;
 
 
 

@@ -20,13 +20,6 @@
 
 
 
-@dynamic segname;
-
-
-
-
-
-
 @dynamic fileoff;
 
 
@@ -39,6 +32,13 @@
 - (void)setFileoffValue:(long long)value_ {
 	[self setFileoff:[NSNumber numberWithLongLong:value_]];
 }
+
+
+
+
+
+
+@dynamic segname;
 
 
 

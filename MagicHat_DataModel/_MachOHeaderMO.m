@@ -20,6 +20,24 @@
 
 
 
+@dynamic size;
+
+
+
+- (long long)sizeValue {
+	NSNumber *result = [self size];
+	return result ? [result longLongValue] : 0;
+}
+
+- (void)setSizeValue:(long long)value_ {
+	[self setSize:[NSNumber numberWithLongLong:value_]];
+}
+
+
+
+
+
+
 @dynamic archName;
 
 
@@ -74,6 +92,24 @@
 
 - (void)setCpusubtypeValue:(int)value_ {
 	[self setCpusubtype:[NSNumber numberWithInt:value_]];
+}
+
+
+
+
+
+
+@dynamic offset;
+
+
+
+- (long long)offsetValue {
+	NSNumber *result = [self offset];
+	return result ? [result longLongValue] : 0;
+}
+
+- (void)setOffsetValue:(long long)value_ {
+	[self setOffset:[NSNumber numberWithLongLong:value_]];
 }
 
 

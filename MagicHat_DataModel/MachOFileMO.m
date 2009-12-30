@@ -38,6 +38,9 @@ void ofile_processor(struct ofile *ofile, char *arch_name, void *cookie) {
 	    return;
     
     if (!self.fileData) {
+        // We currently leak struct ofile and its associated mmap of the mach-o file since
+        // ofile's main client is otool, which doesn't bother cleaning up after itself and leaks.
+        // Eventually we'll replace ofile with a ground-up ruby implementation that won't have this problem.
         self.fileData = [[NSData alloc] initWithBytesNoCopy:ofile->file_addr
                                                      length:ofile->file_size
                                                freeWhenDone:NO];
