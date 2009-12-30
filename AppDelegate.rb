@@ -10,15 +10,14 @@ class AppDelegate
   attr_writer :window
   attr_writer :webview
   
-  def applicationDidFinishLaunching(notification)
-    puts @webview
+  def dumpFileWithPath(filePath)
     machoFile = MachOFileMO.insertInManagedObjectContext(managedObjectContext())
-    
+
     error = Pointer.new_with_type('@')
-    unless machoFile.setFileURL(NSURL.fileURLWithPath('/Applications/Stickies.app/Contents/MacOS/Stickies'), error:error)
+    unless machoFile.parseFileURL(NSURL.fileURLWithPath(filePath), error:error)
         NSApp.presentError(error[0])
     end
-    
+
     output = '';
     machoFile.headers.allObjects.each do |header|
         output += "header: #{header.archName}\n"
@@ -33,6 +32,12 @@ class AppDelegate
         end
     end
     puts output
+  end
+  
+  def applicationDidFinishLaunching(notification)
+    #puts @webview
+    dumpFileWithPath('/Applications/Stickies.app/Contents/MacOS/Stickies')
+    dumpFileWithPath('/Users/wolf/Tweetie 2.app/Tweetie 2')
     
     NSApp.terminate(nil)
   end

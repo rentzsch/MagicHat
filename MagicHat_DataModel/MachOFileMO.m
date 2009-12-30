@@ -1,10 +1,9 @@
 #import "MachOFileMO.h"
-#include "stuff/ofile.h"
-#include "stuff/allocate.h"
-#include "otool/ofile_print.h"
+//#include "stuff/ofile.h"
+//#include "stuff/allocate.h"
+//#include "otool/ofile_print.h"
 #import "MachOHeaderMO.h"
-#import "MachOCommandMO.h"
-#import "ASSIGN.h"
+//#import "ASSIGN.h"
 
 char *progname = "my_progname";
 
@@ -17,21 +16,19 @@ void ofile_processor(struct ofile *ofile, char *arch_name, void *cookie) {
 }
 
 @implementation MachOFileMO
+@synthesize fileData;
 
-- (BOOL)setFileURL:(NSURL*)url_ error:(NSError**)error_ {
-#define kArchFlagCount  64
-    struct arch_flag arch_flags[kArchFlagCount];
-    
+- (BOOL)parseFileURL:(NSURL*)url_ error:(NSError**)error_ {
     ofile_process(
         (char*)[[url_ path] fileSystemRepresentation], //  name
-        arch_flags,       //  arch_flags
-        kArchFlagCount,   //  narch_flags
-        TRUE,             //  all_archs
-        TRUE,             //  process_non_objects
-        TRUE,             //  dylib_flat
-        TRUE,             //  use_member_syntax
-        ofile_processor,  //  processor
-        self);            //  cookie
+        NULL,               //  arch_flags
+        0,                  //  narch_flags
+        TRUE,               //  all_archs
+        TRUE,               //  process_non_objects
+        TRUE,               //  dylib_flat
+        TRUE,               //  use_member_syntax
+        ofile_processor,    //  processor
+        self);              //  cookie
     
     return YES;
 }
@@ -40,45 +37,17 @@ void ofile_processor(struct ofile *ofile, char *arch_name, void *cookie) {
     if(ofile->mh == NULL && ofile->mh64 == NULL)
 	    return;
     
+    if (!self.fileData) {
+        self.fileData = [[NSData alloc] initWithBytesNoCopy:ofile->file_addr
+                                                     length:ofile->file_size
+                                               freeWhenDone:NO];
+    }
+    
     MachOHeaderMO *header = [MachOHeaderMO insertInManagedObjectContext:[self managedObjectContext]];
     [self addHeadersObject:header];
-    header.archName = [NSString stringWithUTF8String:arch_name];
+    header.archName = arch_name ? [NSString stringWithUTF8String:arch_name] : @"main arch";
     
-    assert(ofile->mh || ofile->mh64);
-    uint32_t ncmds, sizeofcmds;
-    if (ofile->mh) {
-        ASSIGN_ATTR(header, magic, ofile->mh);
-        ASSIGN_ATTR(header, cputype, ofile->mh);
-        ASSIGN_ATTR(header, cpusubtype, ofile->mh);
-        ASSIGN_ATTR(header, filetype, ofile->mh);
-        ASSIGN_ATTR(header, flags, ofile->mh);
-        ncmds = ofile->mh->ncmds;
-        sizeofcmds = ofile->mh->sizeofcmds;
-    } else {
-        ASSIGN_ATTR(header, magic, ofile->mh64);
-        ASSIGN_ATTR(header, cputype, ofile->mh64);
-        ASSIGN_ATTR(header, cpusubtype, ofile->mh64);
-        ASSIGN_ATTR(header, filetype, ofile->mh64);
-        ASSIGN_ATTR(header, flags, ofile->mh64);
-        ncmds = ofile->mh64->ncmds;
-        sizeofcmds = ofile->mh64->sizeofcmds;
-    }
-    
-    enum byte_sex host_byte_sex = get_host_byte_sex();
-    BOOL swap = ofile->object_byte_sex != host_byte_sex;
-    
-    //--
-    
-    struct load_command *load_command_iter = ofile->load_commands;
-    for (uint32_t cmdIndex = 0; cmdIndex < ncmds; cmdIndex++) {
-        MachOCommandMO *command = [MachOCommandMO commandWithLoadCommand:load_command_iter swap:swap inManagedObjectContext:[self managedObjectContext]];
-        NSLog(@"command: %@", command);
-        [header addCommandsObject:command];
-        load_command_iter = (struct load_command*)(((char*)load_command_iter) + [command cmdsizeValue]);
-    }
-    
-    //--
-    NSLog(@"header: %@", header);
+    [header processOFile:ofile];
 }
 
 @end

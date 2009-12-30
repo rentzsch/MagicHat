@@ -3,8 +3,8 @@
 
 @interface MachOCommandMO : _MachOCommandMO {}
 
-+ (id)commandWithLoadCommand:(struct load_command*)originalLoadCommand swap:(BOOL)swap inManagedObjectContext:(NSManagedObjectContext*)moc;
++ (id)commandWithOriginalLoadCommand:(struct load_command*)originalLoadCommand header:(MachOHeaderMO*)header;
 
-- (void)setLoadCommand:(struct load_command*)swappedLoadCommand swap:(BOOL)swap;
+- (void)setLoadCommand:(struct load_command*)swappedLoadCommand; // Implemented by subclasses.
 
 @end

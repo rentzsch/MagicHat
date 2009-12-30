@@ -1,4 +1,5 @@
 #import "MachOCommandMO.h"
+#import "MachOHeaderMO.h"
 #import "stuff/bytesex.h"
 #import "MachOSegmentCommandMO.h"
 
@@ -6,10 +7,10 @@ typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_
 
 @implementation MachOCommandMO
 
-+ (id)commandWithLoadCommand:(struct load_command*)originalLoadCommand swap:(BOOL)swap inManagedObjectContext:(NSManagedObjectContext*)moc {
++ (id)commandWithOriginalLoadCommand:(struct load_command*)originalLoadCommand header:(MachOHeaderMO*)header {
     struct load_command minimalSwappedLoadCommand;
     bcopy(originalLoadCommand, &minimalSwappedLoadCommand, sizeof(struct load_command));
-    if (swap) {
+    if (header.swap) {
         swap_load_command(&minimalSwappedLoadCommand, get_host_byte_sex());
     }
 
@@ -165,10 +166,11 @@ typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_
             command_swapper = (load_command_swap_proc)swap_load_command;
     }
     
-    MachOCommandMO *command = [command_class insertInManagedObjectContext:moc];
+    MachOCommandMO *command = [command_class insertInManagedObjectContext:[header managedObjectContext]];
+    [header addCommandsObject:command];
     
     struct load_command *swappedLoadCommand;
-    if (swap) {
+    if (header.swap) {
         swappedLoadCommand = malloc(originalLoadCommand->cmdsize);
         bcopy(originalLoadCommand, swappedLoadCommand, originalLoadCommand->cmdsize);
         command_swapper(swappedLoadCommand, get_host_byte_sex());
@@ -177,15 +179,15 @@ typedef void (*load_command_swap_proc)(void *load_command, enum byte_sex target_
     }
     
     [command setName:command_name];
-    [command setLoadCommand:swappedLoadCommand swap:swap];
+    [command setLoadCommand:swappedLoadCommand];
     
-    if (swap) {
+    if (header.swap) {
         free(swappedLoadCommand);
     }
     return command;
 }
 
-- (void)setLoadCommand:(struct load_command*)swappedLoadCommand swap:(BOOL)swap {
+- (void)setLoadCommand:(struct load_command*)swappedLoadCommand {
     [self setCmdValue:swappedLoadCommand->cmd];
     [self setCmdsizeValue:swappedLoadCommand->cmdsize];
 }

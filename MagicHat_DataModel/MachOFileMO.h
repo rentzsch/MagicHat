@@ -1,7 +1,8 @@
 #import "_MachOFileMO.h"
 
 @interface MachOFileMO : _MachOFileMO {}
+@property (retain) NSData *fileData;
 
-- (BOOL)setFileURL:(NSURL*)url_ error:(NSError**)error_;
+- (BOOL)parseFileURL:(NSURL*)url_ error:(NSError**)error_;
 
 @end
