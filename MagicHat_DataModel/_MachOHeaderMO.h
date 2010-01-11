@@ -99,13 +99,17 @@
 
 
 @property (nonatomic, retain) NSSet* commands;
+- (NSMutableSet*)commandsSet;
+
+
+
+@end
+
+@interface _MachOHeaderMO (CoreDataGeneratedAccessors)
 
 - (void)addCommands:(NSSet*)value_;
 - (void)removeCommands:(NSSet*)value_;
 - (void)addCommandsObject:(MachOCommandMO*)value_;
 - (void)removeCommandsObject:(MachOCommandMO*)value_;
-- (NSMutableSet*)commandsSet;
-
-
 
 @end

@@ -1,17 +1,17 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to MachOSegmentSectionMO.h instead.
+// Make changes to MachOSectionMO.h instead.
 
 #import <CoreData/CoreData.h>
 
 
 @class MachOSegmentCommandMO;
 
-@interface MachOSegmentSectionMOID : NSManagedObjectID {}
+@interface MachOSectionMOID : NSManagedObjectID {}
 @end
 
-@interface _MachOSegmentSectionMO : NSManagedObject {}
+@interface _MachOSectionMO : NSManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
-- (MachOSegmentSectionMOID*)objectID;
+- (MachOSectionMOID*)objectID;
 
 
 
@@ -138,5 +138,9 @@
 //- (BOOL)validateSegment:(id*)value_ error:(NSError**)error_;
 
 
+
+@end
+
+@interface _MachOSectionMO (CoreDataGeneratedAccessors)
 
 @end

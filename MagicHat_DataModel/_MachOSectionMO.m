@@ -1,20 +1,20 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to MachOSegmentSectionMO.m instead.
+// Make changes to MachOSectionMO.m instead.
 
-#import "_MachOSegmentSectionMO.h"
+#import "_MachOSectionMO.h"
 
-@implementation MachOSegmentSectionMOID
+@implementation MachOSectionMOID
 @end
 
-@implementation _MachOSegmentSectionMO
+@implementation _MachOSectionMO
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription insertNewObjectForEntityForName:@"MachOSegmentSection" inManagedObjectContext:moc_];
+	return [NSEntityDescription insertNewObjectForEntityForName:@"MachOSection" inManagedObjectContext:moc_];
 }
 
-- (MachOSegmentSectionMOID*)objectID {
-	return (MachOSegmentSectionMOID*)[super objectID];
+- (MachOSectionMOID*)objectID {
+	return (MachOSectionMOID*)[super objectID];
 }
 
 

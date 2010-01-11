@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
+		7931E25010FAEC8F00175784 /* MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E24F10FAEC8E00175784 /* MachOCommandMO.m */; };
+		7931E25210FAEC8F00175784 /* MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E25110FAEC8F00175784 /* MachOFileMO.m */; };
+		7931E25410FAEC8F00175784 /* MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E25310FAEC8F00175784 /* MachOHeaderMO.m */; };
+		7931E25610FAEC9000175784 /* MachOObjCClassesSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E25510FAEC9000175784 /* MachOObjCClassesSectionMO.m */; };
+		7931E25810FAEC9000175784 /* MachOSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E25710FAEC9000175784 /* MachOSectionMO.m */; };
+		7931E25A10FAEC9100175784 /* MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E25910FAEC9100175784 /* MachOSegmentCommandMO.m */; };
+		7931E26510FAEC9400175784 /* _MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E26410FAEC9400175784 /* _MachOCommandMO.m */; };
+		7931E26710FAEC9500175784 /* _MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E26610FAEC9400175784 /* _MachOFileMO.m */; };
+		7931E26910FAEC9500175784 /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E26810FAEC9500175784 /* _MachOHeaderMO.m */; };
+		7931E26B10FAEC9500175784 /* _MachOObjCClassesSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E26A10FAEC9500175784 /* _MachOObjCClassesSectionMO.m */; };
+		7931E26D10FAEC9700175784 /* _MachOSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E26C10FAEC9600175784 /* _MachOSectionMO.m */; };
+		7931E26F10FAEC9700175784 /* _MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7931E26E10FAEC9700175784 /* _MachOSegmentCommandMO.m */; };
 		794A40E610E8103100A8DE20 /* MagicHat_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 794A40E510E8103100A8DE20 /* MagicHat_DataModel.xcdatamodel */; };
 		794A411D10E8113700A8DE20 /* magichat.icns in Resources */ = {isa = PBXBuildFile; fileRef = 794A411C10E8113700A8DE20 /* magichat.icns */; };
 		794A415010E812BF00A8DE20 /* ofile.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A414F10E812BF00A8DE20 /* ofile.c */; };
@@ -23,16 +35,6 @@
 		794A416210E8131400A8DE20 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416110E8131400A8DE20 /* print.c */; };
 		794A416410E8131900A8DE20 /* swap_headers.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416310E8131900A8DE20 /* swap_headers.c */; };
 		794A416610E8132200A8DE20 /* guess_short_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 794A416510E8132200A8DE20 /* guess_short_name.c */; };
-		7989E50410EB40910074F5D8 /* MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E50310EB40900074F5D8 /* MachOCommandMO.m */; };
-		7989E50610EB40910074F5D8 /* MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E50510EB40910074F5D8 /* MachOFileMO.m */; };
-		7989E50810EB40920074F5D8 /* MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E50710EB40910074F5D8 /* MachOHeaderMO.m */; };
-		7989E50A10EB40920074F5D8 /* MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E50910EB40920074F5D8 /* MachOSegmentCommandMO.m */; };
-		7989E50C10EB40930074F5D8 /* MachOSegmentSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E50B10EB40920074F5D8 /* MachOSegmentSectionMO.m */; };
-		7989E51310EB40950074F5D8 /* _MachOCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E51210EB40950074F5D8 /* _MachOCommandMO.m */; };
-		7989E51510EB40950074F5D8 /* _MachOFileMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E51410EB40950074F5D8 /* _MachOFileMO.m */; };
-		7989E51910EB40970074F5D8 /* _MachOHeaderMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E51810EB40960074F5D8 /* _MachOHeaderMO.m */; };
-		7989E51B10EB40970074F5D8 /* _MachOSegmentCommandMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E51A10EB40970074F5D8 /* _MachOSegmentCommandMO.m */; };
-		7989E51D10EB40970074F5D8 /* _MachOSegmentSectionMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989E51C10EB40970074F5D8 /* _MachOSegmentSectionMO.m */; };
 		799CBABD10E89875004D7ED6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799CBABC10E89875004D7ED6 /* WebKit.framework */; };
 		799CBAC410E89940004D7ED6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799CBAC210E89940004D7ED6 /* MainMenu.xib */; };
 		79E6D14D10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6D14C10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m */; };
@@ -63,6 +65,30 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4DE339F60D74FCDD00ADB6EE /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
+		7931E24F10FAEC8E00175784 /* MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOCommandMO.m; sourceTree = "<group>"; };
+		7931E25110FAEC8F00175784 /* MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOFileMO.m; sourceTree = "<group>"; };
+		7931E25310FAEC8F00175784 /* MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOHeaderMO.m; sourceTree = "<group>"; };
+		7931E25510FAEC9000175784 /* MachOObjCClassesSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOObjCClassesSectionMO.m; sourceTree = "<group>"; };
+		7931E25710FAEC9000175784 /* MachOSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSectionMO.m; sourceTree = "<group>"; };
+		7931E25910FAEC9100175784 /* MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentCommandMO.m; sourceTree = "<group>"; };
+		7931E25D10FAEC9200175784 /* MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOCommandMO.h; sourceTree = "<group>"; };
+		7931E25E10FAEC9200175784 /* MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileMO.h; sourceTree = "<group>"; };
+		7931E25F10FAEC9300175784 /* MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOHeaderMO.h; sourceTree = "<group>"; };
+		7931E26010FAEC9300175784 /* MachOObjCClassesSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOObjCClassesSectionMO.h; sourceTree = "<group>"; };
+		7931E26110FAEC9300175784 /* MachOSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSectionMO.h; sourceTree = "<group>"; };
+		7931E26210FAEC9300175784 /* MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentCommandMO.h; sourceTree = "<group>"; };
+		7931E26410FAEC9400175784 /* _MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOCommandMO.m; sourceTree = "<group>"; };
+		7931E26610FAEC9400175784 /* _MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOFileMO.m; sourceTree = "<group>"; };
+		7931E26810FAEC9500175784 /* _MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOHeaderMO.m; sourceTree = "<group>"; };
+		7931E26A10FAEC9500175784 /* _MachOObjCClassesSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOObjCClassesSectionMO.m; sourceTree = "<group>"; };
+		7931E26C10FAEC9600175784 /* _MachOSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSectionMO.m; sourceTree = "<group>"; };
+		7931E26E10FAEC9700175784 /* _MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentCommandMO.m; sourceTree = "<group>"; };
+		7931E27210FAEC9800175784 /* _MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOCommandMO.h; sourceTree = "<group>"; };
+		7931E27310FAEC9800175784 /* _MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOFileMO.h; sourceTree = "<group>"; };
+		7931E27410FAEC9900175784 /* _MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOHeaderMO.h; sourceTree = "<group>"; };
+		7931E27510FAEC9900175784 /* _MachOObjCClassesSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOObjCClassesSectionMO.h; sourceTree = "<group>"; };
+		7931E27610FAEC9900175784 /* _MachOSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSectionMO.h; sourceTree = "<group>"; };
+		7931E27710FAEC9A00175784 /* _MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentCommandMO.h; sourceTree = "<group>"; };
 		794A40E510E8103100A8DE20 /* MagicHat_DataModel.xcdatamodel */ = {isa = PBXFileReference; comments = xmod; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = MagicHat_DataModel.xcdatamodel; sourceTree = "<group>"; };
 		794A411C10E8113700A8DE20 /* magichat.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = magichat.icns; sourceTree = "<group>"; };
 		794A414F10E812BF00A8DE20 /* ofile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ofile.c; sourceTree = "<group>"; };
@@ -78,26 +104,6 @@
 		794A416310E8131900A8DE20 /* swap_headers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swap_headers.c; sourceTree = "<group>"; };
 		794A416510E8132200A8DE20 /* guess_short_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guess_short_name.c; sourceTree = "<group>"; };
 		7989E02210EAE6580074F5D8 /* objc-runtime-new.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-runtime-new.h"; path = "objc4-437.1/runtime/objc-runtime-new.h"; sourceTree = SOURCE_ROOT; };
-		7989E50310EB40900074F5D8 /* MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOCommandMO.m; sourceTree = "<group>"; };
-		7989E50510EB40910074F5D8 /* MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOFileMO.m; sourceTree = "<group>"; };
-		7989E50710EB40910074F5D8 /* MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOHeaderMO.m; sourceTree = "<group>"; };
-		7989E50910EB40920074F5D8 /* MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentCommandMO.m; sourceTree = "<group>"; };
-		7989E50B10EB40920074F5D8 /* MachOSegmentSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOSegmentSectionMO.m; sourceTree = "<group>"; };
-		7989E50D10EB40930074F5D8 /* MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOCommandMO.h; sourceTree = "<group>"; };
-		7989E50E10EB40930074F5D8 /* MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileMO.h; sourceTree = "<group>"; };
-		7989E50F10EB40940074F5D8 /* MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOHeaderMO.h; sourceTree = "<group>"; };
-		7989E51010EB40940074F5D8 /* MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentCommandMO.h; sourceTree = "<group>"; };
-		7989E51110EB40940074F5D8 /* MachOSegmentSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOSegmentSectionMO.h; sourceTree = "<group>"; };
-		7989E51210EB40950074F5D8 /* _MachOCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOCommandMO.m; sourceTree = "<group>"; };
-		7989E51410EB40950074F5D8 /* _MachOFileMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOFileMO.m; sourceTree = "<group>"; };
-		7989E51810EB40960074F5D8 /* _MachOHeaderMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOHeaderMO.m; sourceTree = "<group>"; };
-		7989E51A10EB40970074F5D8 /* _MachOSegmentCommandMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentCommandMO.m; sourceTree = "<group>"; };
-		7989E51C10EB40970074F5D8 /* _MachOSegmentSectionMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _MachOSegmentSectionMO.m; sourceTree = "<group>"; };
-		7989E51E10EB40980074F5D8 /* _MachOCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOCommandMO.h; sourceTree = "<group>"; };
-		7989E51F10EB40980074F5D8 /* _MachOFileMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOFileMO.h; sourceTree = "<group>"; };
-		7989E52010EB40980074F5D8 /* _MachOHeaderMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOHeaderMO.h; sourceTree = "<group>"; };
-		7989E52110EB40990074F5D8 /* _MachOSegmentCommandMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentCommandMO.h; sourceTree = "<group>"; };
-		7989E52210EB409A0074F5D8 /* _MachOSegmentSectionMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _MachOSegmentSectionMO.h; sourceTree = "<group>"; };
 		799CBABC10E89875004D7ED6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		799CBAC310E89940004D7ED6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		799CBB1110E9768B004D7ED6 /* ASSIGN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSIGN.h; sourceTree = "<group>"; };
@@ -231,26 +237,30 @@
 		794A40E810E8104000A8DE20 /* MagicHat_DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				7989E50310EB40900074F5D8 /* MachOCommandMO.m */,
-				7989E50510EB40910074F5D8 /* MachOFileMO.m */,
-				7989E50710EB40910074F5D8 /* MachOHeaderMO.m */,
-				7989E50910EB40920074F5D8 /* MachOSegmentCommandMO.m */,
-				7989E50B10EB40920074F5D8 /* MachOSegmentSectionMO.m */,
-				7989E50D10EB40930074F5D8 /* MachOCommandMO.h */,
-				7989E50E10EB40930074F5D8 /* MachOFileMO.h */,
-				7989E50F10EB40940074F5D8 /* MachOHeaderMO.h */,
-				7989E51010EB40940074F5D8 /* MachOSegmentCommandMO.h */,
-				7989E51110EB40940074F5D8 /* MachOSegmentSectionMO.h */,
-				7989E51210EB40950074F5D8 /* _MachOCommandMO.m */,
-				7989E51410EB40950074F5D8 /* _MachOFileMO.m */,
-				7989E51810EB40960074F5D8 /* _MachOHeaderMO.m */,
-				7989E51A10EB40970074F5D8 /* _MachOSegmentCommandMO.m */,
-				7989E51C10EB40970074F5D8 /* _MachOSegmentSectionMO.m */,
-				7989E51E10EB40980074F5D8 /* _MachOCommandMO.h */,
-				7989E51F10EB40980074F5D8 /* _MachOFileMO.h */,
-				7989E52010EB40980074F5D8 /* _MachOHeaderMO.h */,
-				7989E52110EB40990074F5D8 /* _MachOSegmentCommandMO.h */,
-				7989E52210EB409A0074F5D8 /* _MachOSegmentSectionMO.h */,
+				7931E24F10FAEC8E00175784 /* MachOCommandMO.m */,
+				7931E25110FAEC8F00175784 /* MachOFileMO.m */,
+				7931E25310FAEC8F00175784 /* MachOHeaderMO.m */,
+				7931E25510FAEC9000175784 /* MachOObjCClassesSectionMO.m */,
+				7931E25710FAEC9000175784 /* MachOSectionMO.m */,
+				7931E25910FAEC9100175784 /* MachOSegmentCommandMO.m */,
+				7931E25D10FAEC9200175784 /* MachOCommandMO.h */,
+				7931E25E10FAEC9200175784 /* MachOFileMO.h */,
+				7931E25F10FAEC9300175784 /* MachOHeaderMO.h */,
+				7931E26010FAEC9300175784 /* MachOObjCClassesSectionMO.h */,
+				7931E26110FAEC9300175784 /* MachOSectionMO.h */,
+				7931E26210FAEC9300175784 /* MachOSegmentCommandMO.h */,
+				7931E26410FAEC9400175784 /* _MachOCommandMO.m */,
+				7931E26610FAEC9400175784 /* _MachOFileMO.m */,
+				7931E26810FAEC9500175784 /* _MachOHeaderMO.m */,
+				7931E26A10FAEC9500175784 /* _MachOObjCClassesSectionMO.m */,
+				7931E26C10FAEC9600175784 /* _MachOSectionMO.m */,
+				7931E26E10FAEC9700175784 /* _MachOSegmentCommandMO.m */,
+				7931E27210FAEC9800175784 /* _MachOCommandMO.h */,
+				7931E27310FAEC9800175784 /* _MachOFileMO.h */,
+				7931E27410FAEC9900175784 /* _MachOHeaderMO.h */,
+				7931E27510FAEC9900175784 /* _MachOObjCClassesSectionMO.h */,
+				7931E27610FAEC9900175784 /* _MachOSectionMO.h */,
+				7931E27710FAEC9A00175784 /* _MachOSegmentCommandMO.h */,
 			);
 			path = MagicHat_DataModel;
 			sourceTree = "<group>";
@@ -433,16 +443,18 @@
 				794A416410E8131900A8DE20 /* swap_headers.c in Sources */,
 				794A416610E8132200A8DE20 /* guess_short_name.c in Sources */,
 				79E6D14D10E9C310007BEF81 /* NSString+jr_stringWithUTF8StringmaxLength.m in Sources */,
-				7989E50410EB40910074F5D8 /* MachOCommandMO.m in Sources */,
-				7989E50610EB40910074F5D8 /* MachOFileMO.m in Sources */,
-				7989E50810EB40920074F5D8 /* MachOHeaderMO.m in Sources */,
-				7989E50A10EB40920074F5D8 /* MachOSegmentCommandMO.m in Sources */,
-				7989E50C10EB40930074F5D8 /* MachOSegmentSectionMO.m in Sources */,
-				7989E51310EB40950074F5D8 /* _MachOCommandMO.m in Sources */,
-				7989E51510EB40950074F5D8 /* _MachOFileMO.m in Sources */,
-				7989E51910EB40970074F5D8 /* _MachOHeaderMO.m in Sources */,
-				7989E51B10EB40970074F5D8 /* _MachOSegmentCommandMO.m in Sources */,
-				7989E51D10EB40970074F5D8 /* _MachOSegmentSectionMO.m in Sources */,
+				7931E25010FAEC8F00175784 /* MachOCommandMO.m in Sources */,
+				7931E25210FAEC8F00175784 /* MachOFileMO.m in Sources */,
+				7931E25410FAEC8F00175784 /* MachOHeaderMO.m in Sources */,
+				7931E25610FAEC9000175784 /* MachOObjCClassesSectionMO.m in Sources */,
+				7931E25810FAEC9000175784 /* MachOSectionMO.m in Sources */,
+				7931E25A10FAEC9100175784 /* MachOSegmentCommandMO.m in Sources */,
+				7931E26510FAEC9400175784 /* _MachOCommandMO.m in Sources */,
+				7931E26710FAEC9500175784 /* _MachOFileMO.m in Sources */,
+				7931E26910FAEC9500175784 /* _MachOHeaderMO.m in Sources */,
+				7931E26B10FAEC9500175784 /* _MachOObjCClassesSectionMO.m in Sources */,
+				7931E26D10FAEC9700175784 /* _MachOSectionMO.m in Sources */,
+				7931E26F10FAEC9700175784 /* _MachOSegmentCommandMO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

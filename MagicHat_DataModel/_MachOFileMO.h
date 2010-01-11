@@ -17,13 +17,17 @@
 
 
 @property (nonatomic, retain) NSSet* headers;
+- (NSMutableSet*)headersSet;
+
+
+
+@end
+
+@interface _MachOFileMO (CoreDataGeneratedAccessors)
 
 - (void)addHeaders:(NSSet*)value_;
 - (void)removeHeaders:(NSSet*)value_;
 - (void)addHeadersObject:(MachOHeaderMO*)value_;
 - (void)removeHeadersObject:(MachOHeaderMO*)value_;
-- (NSMutableSet*)headersSet;
-
-
 
 @end

@@ -31,16 +31,6 @@
 
 
 
-@property (nonatomic, retain) NSNumber *cmdoffset;
-
-@property long long cmdoffsetValue;
-- (long long)cmdoffsetValue;
-- (void)setCmdoffsetValue:(long long)value_;
-
-//- (BOOL)validateCmdoffset:(id*)value_ error:(NSError**)error_;
-
-
-
 @property (nonatomic, retain) NSNumber *cmd;
 
 @property int cmdValue;
@@ -51,10 +41,24 @@
 
 
 
+@property (nonatomic, retain) NSNumber *cmdoffset;
+
+@property long long cmdoffsetValue;
+- (long long)cmdoffsetValue;
+- (void)setCmdoffsetValue:(long long)value_;
+
+//- (BOOL)validateCmdoffset:(id*)value_ error:(NSError**)error_;
+
+
+
 
 @property (nonatomic, retain) MachOHeaderMO* header;
 //- (BOOL)validateHeader:(id*)value_ error:(NSError**)error_;
 
 
+
+@end
+
+@interface _MachOCommandMO (CoreDataGeneratedAccessors)
 
 @end

@@ -4,7 +4,7 @@
 #import <CoreData/CoreData.h>
 #import "MachOCommandMO.h"
 
-@class MachOSegmentSectionMO;
+@class MachOSectionMO;
 
 @interface MachOSegmentCommandMOID : NSManagedObjectID {}
 @end
@@ -103,13 +103,17 @@
 
 
 @property (nonatomic, retain) NSSet* sections;
-
-- (void)addSections:(NSSet*)value_;
-- (void)removeSections:(NSSet*)value_;
-- (void)addSectionsObject:(MachOSegmentSectionMO*)value_;
-- (void)removeSectionsObject:(MachOSegmentSectionMO*)value_;
 - (NSMutableSet*)sectionsSet;
 
 
+
+@end
+
+@interface _MachOSegmentCommandMO (CoreDataGeneratedAccessors)
+
+- (void)addSections:(NSSet*)value_;
+- (void)removeSections:(NSSet*)value_;
+- (void)addSectionsObject:(MachOSectionMO*)value_;
+- (void)removeSectionsObject:(MachOSectionMO*)value_;
 
 @end
