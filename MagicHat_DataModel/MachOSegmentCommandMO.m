@@ -2,7 +2,7 @@
 #import "MachOHeaderMO.h"
 #import "ASSIGN.h"
 #import "stuff/bytesex.h"
-#import "MachOSegmentSectionMO.h"
+#import "MachOSectionMO.h"
 #import "NSString+jr_stringWithUTF8StringmaxLength.h"
 
 @implementation MachOSegmentCommandMO
@@ -29,20 +29,7 @@
             }
             for(uint32_t sectionIndex = 0; sectionIndex < segmentCommand->nsects; sectionIndex++) {
                 struct section *sectionIter = &sections[sectionIndex];
-                MachOSegmentSectionMO *section = [MachOSegmentSectionMO insertInManagedObjectContext:[self managedObjectContext]];
-                [self addSectionsObject:section];
-                
-                section.sectname = [NSString jr_stringWithUTF8String:sectionIter->sectname maxLength:sizeof(sectionIter->sectname)];
-                section.segname = [NSString jr_stringWithUTF8String:sectionIter->segname maxLength:sizeof(sectionIter->segname)];
-                ASSIGN_ATTR(section, addr, sectionIter);
-                ASSIGN_ATTR(section, size, sectionIter);
-                ASSIGN_ATTR(section, offset, sectionIter);
-                ASSIGN_ATTR(section, align, sectionIter);
-                ASSIGN_ATTR(section, reloff, sectionIter);
-                ASSIGN_ATTR(section, nreloc, sectionIter);
-                ASSIGN_ATTR(section, flags, sectionIter);
-                ASSIGN_ATTR(section, reserved1, sectionIter);
-                ASSIGN_ATTR(section, reserved2, sectionIter);
+                [MachOSectionMO sectionWithSection:sectionIter segment:self];
             }
         }   break;
         case LC_SEGMENT_64: {
@@ -64,21 +51,8 @@
             }
             for(uint32_t sectionIndex = 0; sectionIndex < segmentCommand->nsects; sectionIndex++) {
                 struct section_64 *sectionIter = &sections[sectionIndex];
-                MachOSegmentSectionMO *section = [MachOSegmentSectionMO insertInManagedObjectContext:[self managedObjectContext]];
-                [self addSectionsObject:section];
                 
-                section.sectname = [NSString jr_stringWithUTF8String:sectionIter->sectname maxLength:sizeof(sectionIter->sectname)];
-                section.segname = [NSString jr_stringWithUTF8String:sectionIter->segname maxLength:sizeof(sectionIter->segname)];
-                ASSIGN_ATTR(section, addr, sectionIter);
-                ASSIGN_ATTR(section, size, sectionIter);
-                ASSIGN_ATTR(section, offset, sectionIter);
-                ASSIGN_ATTR(section, align, sectionIter);
-                ASSIGN_ATTR(section, reloff, sectionIter);
-                ASSIGN_ATTR(section, nreloc, sectionIter);
-                ASSIGN_ATTR(section, flags, sectionIter);
-                ASSIGN_ATTR(section, reserved1, sectionIter);
-                ASSIGN_ATTR(section, reserved2, sectionIter);
-                ASSIGN_ATTR(section, reserved3, sectionIter);
+                [MachOSectionMO sectionWithSection64:sectionIter segment:self];
             }
         }   break;
         default:
