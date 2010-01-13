@@ -57,16 +57,6 @@
 
 
 
-@property (nonatomic, retain) NSNumber *reserved3;
-
-@property int reserved3Value;
-- (int)reserved3Value;
-- (void)setReserved3Value:(int)value_;
-
-//- (BOOL)validateReserved3:(id*)value_ error:(NSError**)error_;
-
-
-
 @property (nonatomic, retain) NSNumber *offset;
 
 @property int offsetValue;

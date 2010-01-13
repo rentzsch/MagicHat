@@ -45,24 +45,6 @@
 
 
 
-@dynamic cmd;
-
-
-
-- (int)cmdValue {
-	NSNumber *result = [self cmd];
-	return result ? [result intValue] : 0;
-}
-
-- (void)setCmdValue:(int)value_ {
-	[self setCmd:[NSNumber numberWithInt:value_]];
-}
-
-
-
-
-
-
 @dynamic cmdoffset;
 
 
@@ -74,6 +56,24 @@
 
 - (void)setCmdoffsetValue:(long long)value_ {
 	[self setCmdoffset:[NSNumber numberWithLongLong:value_]];
+}
+
+
+
+
+
+
+@dynamic cmd;
+
+
+
+- (int)cmdValue {
+	NSNumber *result = [self cmd];
+	return result ? [result intValue] : 0;
+}
+
+- (void)setCmdValue:(int)value_ {
+	[self setCmd:[NSNumber numberWithInt:value_]];
 }
 
 

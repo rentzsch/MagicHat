@@ -88,24 +88,6 @@
 
 
 
-@dynamic reserved3;
-
-
-
-- (int)reserved3Value {
-	NSNumber *result = [self reserved3];
-	return result ? [result intValue] : 0;
-}
-
-- (void)setReserved3Value:(int)value_ {
-	[self setReserved3:[NSNumber numberWithInt:value_]];
-}
-
-
-
-
-
-
 @dynamic offset;
 
 

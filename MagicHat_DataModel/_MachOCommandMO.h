@@ -31,16 +31,6 @@
 
 
 
-@property (nonatomic, retain) NSNumber *cmd;
-
-@property int cmdValue;
-- (int)cmdValue;
-- (void)setCmdValue:(int)value_;
-
-//- (BOOL)validateCmd:(id*)value_ error:(NSError**)error_;
-
-
-
 @property (nonatomic, retain) NSNumber *cmdoffset;
 
 @property long long cmdoffsetValue;
@@ -48,6 +38,16 @@
 - (void)setCmdoffsetValue:(long long)value_;
 
 //- (BOOL)validateCmdoffset:(id*)value_ error:(NSError**)error_;
+
+
+
+@property (nonatomic, retain) NSNumber *cmd;
+
+@property int cmdValue;
+- (int)cmdValue;
+- (void)setCmdValue:(int)value_;
+
+//- (BOOL)validateCmd:(id*)value_ error:(NSError**)error_;
 
 
 
