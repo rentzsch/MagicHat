@@ -2,6 +2,8 @@
 
 @implementation MachOClassesSectionMO
 
-// Custom logic goes here.
+- (void)classes {
+    ;
+}
 
 @end

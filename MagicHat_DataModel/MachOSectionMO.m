@@ -3,6 +3,9 @@
 #import "MachOClassesSectionMO.h"
 #import "NSString+jr_stringWithUTF8StringmaxLength.h"
 #import "ASSIGN.h"
+#import "MachOSegmentCommandMO.h"
+#import "MachOHeaderMO.h"
+#import "MachOFileMO.h"
 
 @implementation MachOSectionMO
 
@@ -53,6 +56,12 @@
     ASSIGN_ATTR(self, reserved1, swappedSection);
     ASSIGN_ATTR(self, reserved2, swappedSection);
     ASSIGN_ATTR(self, reserved3, swappedSection); // section_64-only
+}
+
+- (NSData*)sectionData {
+    const char *fileDataPtr = [self.segment.header.file.fileData bytes];
+    const char *sectionDataPtr = fileDataPtr + self.segment.header.offsetValue + self.offsetValue;
+    return [NSData dataWithBytesNoCopy:(void*)sectionDataPtr length:self.sizeValue freeWhenDone:NO];
 }
 
 @end

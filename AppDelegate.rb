@@ -29,7 +29,10 @@ class AppDelegate
                 output += "\t\tsegment: #{command.segname} fileoff:#{command.fileoff} (0x#{command.fileoff.to_s(16)}) vmaddr:0x#{command.vmaddr} (0x#{command.vmaddr.to_s(16)}) filesize:#{command.filesize} (0x#{command.filesize.to_s(16)})\n"
                 sections = command.sections.allObjects.sortedArrayUsingDescriptors([NSSortDescriptor.sortDescriptorWithKey('offset', ascending:true)])
                 sections.each do |section|
-                    output += "\t\t\tsection: #{section.sectname} offset:#{header.offset+command.fileoff+section.offset} size:#{section.size}\n"
+                    output += "\t\t\tsection: #{section.sectname} offset:#{header.offset+section.offset} (#{section.offset}) size:#{section.size}\n"
+                    if section.kind_of?(MachOClassesSectionMO)
+                      output += "\t\t\t\tsectionData: #{section.sectionData.description}\n"
+                    end
                 end
             end
         end

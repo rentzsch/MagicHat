@@ -11,4 +11,6 @@
 - (void)setSection:(struct section*)swappedSection;
 - (void)setSection64:(struct section_64*)swappedSection;
 
+- (NSData*)sectionData;
+
 @end
