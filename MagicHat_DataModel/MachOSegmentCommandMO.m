@@ -2,7 +2,8 @@
 #import "MachOHeaderMO.h"
 #import "ASSIGN.h"
 #import "stuff/bytesex.h"
-#import "MachOSectionMO.h"
+#import "MachOSectionMO32.h"
+#import "MachOSectionMO64.h"
 #import "NSString+jr_stringWithUTF8StringmaxLength.h"
 
 @implementation MachOSegmentCommandMO
@@ -29,7 +30,7 @@
             }
             for(uint32_t sectionIndex = 0; sectionIndex < segmentCommand->nsects; sectionIndex++) {
                 struct section *sectionIter = &sections[sectionIndex];
-                [MachOSectionMO sectionWithSection:sectionIter segment:self];
+                [MachOSection32MO sectionWithSection32:sectionIter segment:self];
             }
         }   break;
         case LC_SEGMENT_64: {
@@ -52,7 +53,7 @@
             for(uint32_t sectionIndex = 0; sectionIndex < segmentCommand->nsects; sectionIndex++) {
                 struct section_64 *sectionIter = &sections[sectionIndex];
                 
-                [MachOSectionMO sectionWithSection64:sectionIter segment:self];
+                [MachOSection64MO sectionWithSection64:sectionIter segment:self];
             }
         }   break;
         default:
